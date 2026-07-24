@@ -32,9 +32,7 @@ function applyLang(l) {
   document.getElementById("langEs").classList.toggle("active", l === "es");
   document.getElementById("langEn").setAttribute("aria-pressed", l === "en");
   document.getElementById("langEs").setAttribute("aria-pressed", l === "es");
-  document.title = l === "es"
-    ? "DARCNIA — Coloca la carta. Enfrenta lo que despierta."
-    : "DARCNIA — Place the card. Face what awakens.";
+  document.title = "Darcnia Monster";
 }
 document.getElementById("langEn").addEventListener("click", () => applyLang("en"));
 document.getElementById("langEs").addEventListener("click", () => applyLang("es"));

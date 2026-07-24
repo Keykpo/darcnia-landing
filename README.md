@@ -6,10 +6,9 @@ Página estática (HTML/CSS/JS puro, sin build step). Bilingüe EN/ES.
 
 ## Deploy
 
-Cualquier hosting estático sirve tal cual la carpeta:
+**Producción: [darcniamonster.com](https://darcniamonster.com) vía Vercel** — conectar este repo en Vercel (framework: *Other*, sin build command, output = raíz) y asignar el dominio en Project Settings → Domains.
 
-- **GitHub Pages**: Settings → Pages → Deploy from branch → `main` / root.
-- **Cloudflare Pages / Netlify**: arrastrar la carpeta o conectar el repo. Sin comando de build; output = raíz.
+Todas las URLs absolutas (canonical, Open Graph, sitemap, JSON-LD) ya apuntan a `darcniamonster.com`.
 
 ## Configuración pendiente al publicar
 
@@ -20,7 +19,7 @@ steamUrl: null,   // ← URL de la página de Steam cuando exista
 youtubeId: null,  // ← id de YouTube del tráiler (pisa al video local si se setea)
 ```
 
-En `index.html`, actualizar `og:image` y `twitter:image` a URLs **absolutas** del dominio final para que las previews al compartir funcionen.
+Tras el deploy, validar las previews de compartir en https://cards-dev.twitter.com/validator y pegando el link en Discord.
 
 ## Estructura
 
