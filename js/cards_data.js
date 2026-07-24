@@ -1,0 +1,195 @@
+/* Datos reales de cartas exportados del juego (tools/export_cards_web.gd). */
+window.CARDS_DATA = {
+  "coloso_marfil": {
+    "atk": 1900,
+    "def": 1500,
+    "en": {
+      "flavor": "",
+      "name": "Ivory Colossus",
+      "text": "Every groove in its body is a ship that went under. It carved them itself, one by one."
+    },
+    "es": {
+      "flavor": "",
+      "name": "Coloso de Marfil",
+      "text": "Cada surco de su cuerpo es un barco que se hundió. Los talló él, uno por uno."
+    },
+    "level": 5,
+    "monster": true
+  },
+  "convergencia": {
+    "atk": 0,
+    "def": 0,
+    "en": {
+      "flavor": "",
+      "name": "Convergence",
+      "text": "Send the materials of a Fusion Monster from your hand or field to the Graveyard: Special Summon it from your Fusion Deck."
+    },
+    "es": {
+      "flavor": "",
+      "name": "Convergencia",
+      "text": "Manda al Osario, de tu mano o campo, los materiales de un monstruo de Fusión: invócalo de Modo Especial desde tu Mazo de Fusión."
+    },
+    "level": 1,
+    "monster": false
+  },
+  "dragon_espectral": {
+    "atk": 2800,
+    "def": 2100,
+    "en": {
+      "flavor": "The last thing the King's right hand ever sealed, with his own hands and without shaking, was the only thing he had ever loved. He still keeps it on him. He says it doesn't weigh on him.",
+      "name": "Spectral Dragon",
+      "text": "\"Lesser Specter\" + \"Mist Dragon\""
+    },
+    "es": {
+      "flavor": "Lo último que selló la mano derecha del Rey, con sus propias manos y sin temblar, fue lo único que había amado. Todavía lo lleva encima. Dice que no le pesa.",
+      "name": "Dragón Espectral",
+      "text": "\"Espectro Menor\" + \"Dragón de Bruma\""
+    },
+    "level": 7,
+    "monster": true
+  },
+  "espadachin_celeste": {
+    "atk": 1500,
+    "def": 1400,
+    "en": {
+      "flavor": "",
+      "name": "Celestial Swordsman",
+      "text": "Each time this card destroys a monster in battle: it gains 300 ATK, but loses 200 DEF."
+    },
+    "es": {
+      "flavor": "",
+      "name": "Espadachín Celeste",
+      "text": "Cada vez que esta carta destruya un monstruo en batalla: gana 300 ATK, pero pierde 200 DEF."
+    },
+    "level": 4,
+    "monster": true
+  },
+  "espejo_espectral": {
+    "atk": 0,
+    "def": 0,
+    "en": {
+      "flavor": "",
+      "name": "Spectral Mirror",
+      "text": "When a Spell is activated: negate its activation and destroy it."
+    },
+    "es": {
+      "flavor": "",
+      "name": "Espejo Espectral",
+      "text": "Cuando se activa un Hechizo: niega su activación y destrúyelo."
+    },
+    "level": 1,
+    "monster": false
+  },
+  "maga_elfica": {
+    "atk": 1700,
+    "def": 1300,
+    "en": {
+      "flavor": "She studied magic for centuries. Her grimoire holds spells the world has forgotten, and a voice that has walked with you since the first floor, though you do not yet know whose it is.",
+      "name": "Millennial Mage",
+      "text": ""
+    },
+    "es": {
+      "flavor": "Estudió la magia durante siglos. Su grimorio guarda hechizos que el mundo ya olvidó — y una voz que te acompaña desde el primer piso, aunque todavía no sepas de quién es.",
+      "name": "Maga Milenaria",
+      "text": ""
+    },
+    "level": 4,
+    "monster": true
+  },
+  "nerith_eco": {
+    "atk": 1800,
+    "def": 1500,
+    "en": {
+      "flavor": "They fell here before you, and the Abyss kept their shape. None of those faces was its own. None had a name.",
+      "name": "Nerith, the Hollow Echo",
+      "text": "When this card is destroyed: Special Summon 1 Level 4 or lower monster from your Graveyard."
+    },
+    "es": {
+      "flavor": "Cayeron aquí antes que tú, y el Abismo se quedó con su forma. Ninguna de esas caras era la suya. Ninguna tenía nombre.",
+      "name": "Nerith, el Eco Hueco",
+      "text": "Cuando esta carta sea destruida: invoca de Modo Especial 1 monstruo Nivel 4 o menor de tu Osario."
+    },
+    "level": 6,
+    "monster": true
+  },
+  "pacto_de_sangre": {
+    "atk": 0,
+    "def": 0,
+    "en": {
+      "flavor": "",
+      "name": "Blood Pact",
+      "text": "Pay 1000 LP: draw 2 cards."
+    },
+    "es": {
+      "flavor": "",
+      "name": "Pacto de Sangre",
+      "text": "Paga 1000 LP: roba 2 cartas."
+    },
+    "level": 1,
+    "monster": false
+  },
+  "purga_espectral": {
+    "atk": 0,
+    "def": 0,
+    "en": {
+      "flavor": "",
+      "name": "Spectral Purge",
+      "text": "Choose 1 monster on the field: destroy it."
+    },
+    "es": {
+      "flavor": "",
+      "name": "Purga Espectral",
+      "text": "Elige 1 monstruo en el campo: destrúyelo."
+    },
+    "level": 1,
+    "monster": false
+  },
+  "sello_de_bruma": {
+    "atk": 0,
+    "def": 0,
+    "en": {
+      "flavor": "",
+      "name": "Seal of Mist",
+      "text": "While this seal remains on the field, your monsters gain 500 ATK."
+    },
+    "es": {
+      "flavor": "",
+      "name": "Sello de Bruma",
+      "text": "Mientras este sello siga en el campo, tus monstruos ganan 500 ATK."
+    },
+    "level": 1,
+    "monster": false
+  },
+  "senor_del_rito": {
+    "atk": 2300,
+    "def": 1800,
+    "en": {
+      "flavor": "",
+      "name": "Lord of the Rite",
+      "text": "Summoned with 'Rite of Darcnia'."
+    },
+    "es": {
+      "flavor": "",
+      "name": "Señor del Rito",
+      "text": "Se invoca con \"Rito de Darcnia\"."
+    },
+    "level": 6,
+    "monster": true
+  },
+  "solane_clemencia": {
+    "atk": 1200,
+    "def": 2200,
+    "en": {
+      "flavor": "She refused to heal the King's army. They sealed her with her hands still warm. They say that in the Abyss she reaches them out still, into nothing.",
+      "name": "Solane, the Last Mercy",
+      "text": ""
+    },
+    "es": {
+      "flavor": "Se negó a curar al ejército del Rey. La sellaron con las manos todavía tibias. Dicen que en el Abismo sigue tendiéndolas hacia la nada.",
+      "name": "Solane, la Última Clemencia",
+      "text": ""
+    },
+    "level": 5,
+    "monster": true
+  }
+};

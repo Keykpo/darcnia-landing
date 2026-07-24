@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DARCNIA — Place the card. Face what awakens.</title>
+  <meta name="description" content="A tactical card game where every card you play rises onto the board as a living pixel-art monster. Climb the Tower, seal its keepers, master the Runes.">
+  <meta property="og:title" content="DARCNIA">
+  <meta property="og:description" content="Place the card. Face what awakens. A pixel-art tactical card game.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/screens/menu.webp">
+  <meta name="theme-color" content="#0d0d1e">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DARCNIA">
+  <meta name="twitter:description" content="Place the card. Face what awakens. A pixel-art tactical card game.">
+  <meta name="twitter:image" content="assets/video/poster.webp">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon_512.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"VideoGame","name":"Darcnia",
+   "description":"A tactical card game where every card you play rises onto the board as a living pixel-art monster. Climb the Tower, seal its keepers, master the Runes.",
+   "genre":["Card Game","Strategy"],"gamePlatform":"PC","operatingSystem":"Windows",
+   "author":{"@type":"Person","name":"Darcnia"},"inLanguage":["en","es"],
+   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/PreOrder"}}
+  </script>
+  <link rel="preload" as="image" href="assets/img/bg_temple.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ======================= NAV ======================= -->
+  <header class="nav" id="nav">
+    <nav class="nav-links" id="navLinks">
+      <a href="#game" data-i18n="nav.game">The Game</a>
+      <a href="#cards" data-i18n="nav.cards">Cards</a>
+      <a href="#runes" data-i18n="nav.runes">Runes</a>
+      <a href="#tower" data-i18n="nav.tower">The Tower</a>
+      <a href="#media" data-i18n="nav.media">Media</a>
+      <a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a>
+      <a href="#support" data-i18n="nav.support">Support</a>
+    </nav>
+    <div class="nav-right">
+      <button class="music-btn" id="musicBtn" aria-label="Music on/off" aria-pressed="false">
+        <svg class="ico-on" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.05A4.5 4.5 0 0 0 16.5 12zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        <svg class="ico-off" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.5 12a4.5 4.5 0 0 0-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.9 8.9 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73 4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+      </button>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button id="langEn" class="lang-btn active" aria-pressed="true">EN</button>
+        <span class="lang-sep">·</span>
+        <button id="langEs" class="lang-btn" aria-pressed="false">ES</button>
+      </div>
+      <a class="btn btn-small btn-steam nav-cta" id="navSteam" href="#support">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.97 9.24l5.36 2.21a2.83 2.83 0 0 1 1.6-.49h.14l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.4 2.43v.12a2.83 2.83 0 1 1-5.63.42L2.3 14.6A10 10 0 1 0 12 2Zm-5.72 14.6 1.23.51a2.12 2.12 0 1 0 1.15-2.76l1.27.52a1.56 1.56 0 1 1-1.2 2.88l-2.45-1.15Zm11-6.11a2.51 2.51 0 1 0-2.51 2.51 2.52 2.52 0 0 0 2.51-2.51Zm-4.39 0a1.89 1.89 0 1 1 1.88 1.89 1.88 1.88 0 0 1-1.88-1.89Z"/></svg>
+        <span data-i18n="nav.wishlist">Wishlist</span>
+      </a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <video class="hero-bg-video" src="assets/video/bg_temple.mp4" autoplay muted loop playsinline poster="assets/img/bg_temple.webp" aria-hidden="true"></video>
+    <canvas class="hero-stars" id="stars" aria-hidden="true"></canvas>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <img class="hero-logo reveal" src="assets/img/logo.webp" alt="DARCNIA">
+      <p class="hero-tagline reveal" data-i18n="hero.tagline">Place the card. Face what awakens.</p>
+      <p class="hero-sub reveal" data-i18n="hero.sub">A tactical card game where every card you play rises onto the board as a living pixel-art monster.</p>
+
+      <div class="hero-ctas reveal">
+        <a class="btn btn-steam" id="heroSteam" href="#" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.97 9.24l5.36 2.21a2.83 2.83 0 0 1 1.6-.49h.14l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.4 2.43v.12a2.83 2.83 0 1 1-5.63.42L2.3 14.6A10 10 0 1 0 12 2Zm-5.72 14.6 1.23.51a2.12 2.12 0 1 0 1.15-2.76l1.27.52a1.56 1.56 0 1 1-1.2 2.88l-2.45-1.15Zm11-6.11a2.51 2.51 0 1 0-2.51 2.51 2.52 2.52 0 0 0 2.51-2.51Zm-4.39 0a1.89 1.89 0 1 1 1.88 1.89 1.88 1.88 0 0 1-1.88-1.89Z"/></svg>
+          <span data-i18n="hero.wishlist">Wishlist on Steam</span>
+          <em class="soon-chip" id="steamSoon" data-i18n="hero.wishlist_soon">page coming soon</em>
+        </a>
+        <a class="btn btn-patreon" id="heroPatreon" href="https://www.patreon.com/darcniamonster" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.82 2.41c-3.96 0-7.18 3.22-7.18 7.19 0 3.95 3.22 7.16 7.18 7.16 3.95 0 7.16-3.21 7.16-7.16 0-3.97-3.21-7.19-7.16-7.19M2.02 21.6h3.5V2.41h-3.5Z"/></svg>
+          <span data-i18n="hero.patreon">Support on Patreon</span>
+        </a>
+      </div>
+
+      <div class="hero-video reveal" id="videoFrame">
+        <div class="video-shell" id="videoShell">
+          <img src="assets/video/poster.webp" alt="" class="video-poster">
+          <div class="video-overlay">
+            <div class="video-play" aria-hidden="true">▶</div>
+            <p class="video-soon" id="videoLabel" data-i18n="hero.trailer_soon">Trailer coming soon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scrollhint" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ======================= PILLARS ======================= -->
+  <section class="section" id="game">
+    <div class="ornament reveal"><img src="assets/img/divider.webp" alt="" aria-hidden="true"></div>
+    <h2 class="section-title reveal" data-i18n="pillars.title">A duel like no other</h2>
+    <div class="pillars">
+      <article class="pillar reveal">
+        <div class="pillar-art"><video src="assets/video/summon.mp4" autoplay loop muted playsinline aria-label="Placing a card summons its monster onto the board"></video></div>
+        <h3 data-i18n="pillars.p1t">Cards that come alive</h3>
+        <p data-i18n="pillars.p1b">Place a card on the ground and its monster steps out of it — pixel-art souls rising right where the card lands.</p>
+      </article>
+      <article class="pillar reveal">
+        <div class="pillar-art"><img src="assets/img/screens/towermap_base.webp" alt="The first floors of the Tower" loading="lazy" style="object-position: center 32%"></div>
+        <h3 data-i18n="pillars.p2t">Climb the Tower</h3>
+        <p data-i18n="pillars.p2b">Ten floors above the void. Ten keepers waiting. Defeat them and seal them — every victory becomes a card in your deck.</p>
+      </article>
+      <article class="pillar reveal">
+        <div class="pillar-art"><img src="assets/img/cards/sello_de_bruma.webp" alt="Seal of Mist rune card" loading="lazy" style="object-position: center 58%"></div>
+        <h3 data-i18n="pillars.p3t">Master the Runes</h3>
+        <p data-i18n="pillars.p3b">Five kinds of runes shape every duel: strike, empower, lie in wait, rule the field, or perform the rite.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======================= CARDS ======================= -->
+  <section class="section section-cards" id="cards">
+    <div class="ornament reveal"><img src="assets/img/divider.webp" alt="" aria-hidden="true"></div>
+    <h2 class="section-title reveal" data-i18n="cards.title">Every card is a piece of art</h2>
+    <p class="section-sub reveal" data-i18n="cards.sub">Full-art frames. Rank gems from F to SSS. Monsters, keepers and the sealed — painted pixel by pixel.</p>
+    <p class="cards-hint reveal" data-i18n="cards.hint">Move your cursor over a card</p>
+    <div class="card-grid">
+      <figure class="card3d reveal" data-card="maga_elfica" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/maga_elfica.webp" alt="Millennial Mage" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="espadachin_celeste" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/espadachin_celeste.webp" alt="Celestial Swordsman" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="coloso_marfil" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/coloso_marfil.webp" alt="Ivory Colossus" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="solane_clemencia" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/solane_clemencia.webp" alt="Solane, the Last Clemency" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="nerith_eco" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/nerith_eco.webp" alt="Nerith, the Hollow Echo" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="dragon_espectral" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/dragon_espectral.webp" alt="Spectral Dragon" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="senor_del_rito" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/senor_del_rito.webp" alt="Lord of the Rite" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+    </div>
+    <p class="cards-more reveal" data-i18n="cards.more">…and 35+ more monsters to seal!</p>
+  </section>
+
+  <!-- ======================= RUNES ======================= -->
+  <section class="section section-runes" id="runes">
+    <div class="ornament reveal"><img src="assets/img/divider.webp" alt="" aria-hidden="true"></div>
+    <h2 class="section-title reveal" data-i18n="runes.title">The Runes</h2>
+    <p class="section-sub reveal" data-i18n="runes.sub">No spells. No traps. In Darcnia, magic is carved — five kinds of runes, one language of power.</p>
+
+    <div class="sigil-row">
+      <div class="sigil reveal" style="--rc:#66f28c">
+        <span class="orb"><img src="assets/img/sigil_spell.webp" alt="" loading="lazy"></span>
+        <h4 data-i18n="runes.spell_t">Spell Rune</h4>
+        <p data-i18n="runes.spell_b">Cast it and it's gone. The effect is immediate.</p>
+      </div>
+      <div class="sigil reveal" style="--rc:#fa9e38">
+        <span class="orb"><img src="assets/img/sigil_power.webp" alt="" loading="lazy"></span>
+        <h4 data-i18n="runes.power_t">Power Rune</h4>
+        <p data-i18n="runes.power_b">Bound to a monster. Strength written in stone.</p>
+      </div>
+      <div class="sigil reveal" style="--rc:#e566e5">
+        <span class="orb"><img src="assets/img/sigil_latent.webp" alt="" loading="lazy"></span>
+        <h4 data-i18n="runes.latent_t">Latent Rune</h4>
+        <p data-i18n="runes.latent_b">Set face-down. It waits for your rival's mistake.</p>
+      </div>
+      <div class="sigil reveal" style="--rc:#66c7fa">
+        <span class="orb"><img src="assets/img/sigil_domain.webp" alt="" loading="lazy"></span>
+        <h4 data-i18n="runes.domain_t">Domain Rune</h4>
+        <p data-i18n="runes.domain_b">The battlefield itself takes a side.</p>
+      </div>
+      <div class="sigil reveal" style="--rc:#fad961">
+        <span class="orb"><img src="assets/img/sigil_rite.webp" alt="" loading="lazy"></span>
+        <h4 data-i18n="runes.rite_t">Rite Rune</h4>
+        <p data-i18n="runes.rite_b">Some beings can only be called, never played.</p>
+      </div>
+    </div>
+
+    <div class="card-grid card-grid-runes">
+      <figure class="card3d reveal" data-card="purga_espectral" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/purga_espectral.webp" alt="Spectral Purge" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="espejo_espectral" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/espejo_espectral.webp" alt="Spectral Mirror" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="sello_de_bruma" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/sello_de_bruma.webp" alt="Seal of Mist" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="convergencia" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/convergencia.webp" alt="Convergence" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+      <figure class="card3d reveal" data-card="pacto_de_sangre" tabindex="0"><div class="card3d-inner"><img src="assets/img/cards/pacto_de_sangre.webp" alt="Blood Pact" loading="lazy"><span class="holo"></span><span class="shine"></span></div></figure>
+    </div>
+  </section>
+
+  <!-- ======================= TOWER ======================= -->
+  <section class="section section-tower" id="tower">
+    <div class="tower-bg" aria-hidden="true"></div>
+    <div class="tower-inner">
+      <h2 class="section-title reveal" data-i18n="tower.title">The Tower calls</h2>
+      <blockquote class="tower-quote reveal">
+        <p data-i18n="tower.quote">“The Tower was not built. It was called.”</p>
+        <cite data-i18n="tower.cite">— the Millennial Mage</cite>
+      </blockquote>
+      <p class="tower-body reveal" data-i18n="tower.body">Ten floors. A king who sealed what he loved. A guide who remembers too much. Climb, duel the keeper of every floor — and decide what to do with what waits at the top.</p>
+      <div class="tower-chips reveal">
+        <span class="chip" data-i18n="tower.c1">10 floors</span>
+        <span class="chip" data-i18n="tower.c2">Boss duels</span>
+        <span class="chip" data-i18n="tower.c3">A story told in cards</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= MEDIA ======================= -->
+  <section class="section" id="media">
+    <div class="ornament reveal"><img src="assets/img/divider.webp" alt="" aria-hidden="true"></div>
+    <h2 class="section-title reveal" data-i18n="media.title">From the temple</h2>
+    <div class="media-grid">
+      <button class="media-item reveal" data-full="assets/img/screens/menu.webp"><img src="assets/img/screens/menu.webp" alt="Main menu" loading="lazy"></button>
+      <button class="media-item reveal" data-full="assets/img/screens/deckbuilder.webp"><img src="assets/img/screens/deckbuilder.webp" alt="Deck builder" loading="lazy"></button>
+      <button class="media-item reveal" data-full="assets/img/screens/towermap.webp"><img src="assets/img/screens/towermap.webp" alt="Tower map" loading="lazy"></button>
+      <button class="media-item reveal" data-full="assets/img/art_maga.webp"><img src="assets/img/art_maga.webp" alt="The Mage reading constellations" loading="lazy"></button>
+      <button class="media-item reveal" data-full="assets/img/art_coloso.webp"><img src="assets/img/art_coloso.webp" alt="Ivory Colossus at dawn" loading="lazy"></button>
+      <button class="media-item reveal" data-full="assets/img/screens/duel.webp"><img src="assets/img/screens/duel.webp" alt="A duel in progress — monsters on the board" loading="lazy"></button>
+    </div>
+  </section>
+
+  <!-- ======================= ROADMAP ======================= -->
+  <section class="section" id="roadmap">
+    <div class="ornament reveal"><img src="assets/img/divider.webp" alt="" aria-hidden="true"></div>
+    <h2 class="section-title reveal" data-i18n="rm.title">The ascent ahead</h2>
+    <p class="section-sub reveal" data-i18n="rm.sub">No dates, no promises broken — each milestone is sealed when it's ready. This is the climb.</p>
+
+    <div class="roadmap2">
+      <div class="rm2-track" aria-hidden="true"></div>
+
+      <article class="rm2-row" data-state="done">
+        <div class="rm2-panel reveal from-left">
+          <h3 data-i18n="rm.p1">Sealed</h3>
+          <ul>
+            <li data-i18n="rm.p1a">Full duel engine</li>
+            <li data-i18n="rm.p1b">The Tower — 10 floors playable</li>
+            <li data-i18n="rm.p1c">Deck builder &amp; collection</li>
+            <li data-i18n="rm.p1d">Pack opening &amp; free economy</li>
+            <li data-i18n="rm.p1e">Fully bilingual EN / ES</li>
+          </ul>
+        </div>
+        <div class="rm2-orb reveal"><img src="assets/img/rm_sealed.webp" alt="" loading="lazy"></div>
+      </article>
+
+      <article class="rm2-row rm2-flip" data-state="now">
+        <div class="rm2-panel reveal from-right">
+          <h3 data-i18n="rm.p2">In the ritual</h3>
+          <ul>
+            <li data-i18n="rm.p2a">The full story of the first 10 floors</li>
+            <li data-i18n="rm.p2b">Polishing pixel art — attacks, poses, animations</li>
+            <li data-i18n="rm.p2c">Steam page</li>
+          </ul>
+        </div>
+        <div class="rm2-orb reveal"><img src="assets/img/rm_ritual.webp" alt="" loading="lazy"></div>
+      </article>
+
+      <article class="rm2-row" data-state="next">
+        <div class="rm2-panel reveal from-left">
+          <h3 data-i18n="rm.p3">To awaken</h3>
+          <ul>
+            <li data-i18n="rm.p3a">Free demo — play &amp; wishlist</li>
+            <li data-i18n="rm.p3b">Online 1v1 — friends &amp; matchmaking</li>
+            <li data-i18n="rm.p3c">100 monsters to seal</li>
+            <li data-i18n="rm.p3d">Shiny cards — rare variants</li>
+          </ul>
+        </div>
+        <div class="rm2-orb reveal"><img src="assets/img/rm_awaken.webp" alt="" loading="lazy"></div>
+      </article>
+
+      <article class="rm2-row rm2-flip" data-state="vision">
+        <div class="rm2-panel reveal from-right">
+          <h3 data-i18n="rm.p4">Beyond the Tower</h3>
+          <ul>
+            <li data-i18n="rm.p4a">Mobile &amp; consoles — full crossplay</li>
+            <li data-i18n="rm.p4b">Player market — trade your cards</li>
+            <li data-i18n="rm.p4c">Open world — hunt monsters, win their cards</li>
+          </ul>
+        </div>
+        <div class="rm2-orb reveal"><img src="assets/img/rm_beyond.webp" alt="" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======================= SUPPORT ======================= -->
+  <section class="section section-support" id="support">
+    <div class="ornament reveal"><img src="assets/img/divider.webp" alt="" aria-hidden="true"></div>
+    <h2 class="section-title reveal" data-i18n="support.title">Join the ascent</h2>
+    <p class="section-sub reveal" data-i18n="support.body">Darcnia is being crafted by a tiny team with an enormous obsession: every card, every sprite, every rune drawn with intent. Your support decides how high the Tower goes.</p>
+    <div class="support-grid">
+      <article class="support-panel reveal">
+        <h3 data-i18n="support.patreon_t">Become a patron</h3>
+        <p data-i18n="support.patreon_b">Immortalize a memory, someone you love, or a wild idea: design a card with me and it lives in Darcnia forever.</p>
+        <a class="btn btn-patreon" href="https://www.patreon.com/darcniamonster" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.82 2.41c-3.96 0-7.18 3.22-7.18 7.19 0 3.95 3.22 7.16 7.18 7.16 3.95 0 7.16-3.21 7.16-7.16 0-3.97-3.21-7.19-7.16-7.19M2.02 21.6h3.5V2.41h-3.5Z"/></svg>
+          <span data-i18n="support.patreon_cta">Create your card, forever</span>
+        </a>
+      </article>
+      <article class="support-panel reveal">
+        <h3 data-i18n="support.discord_t">Join the Discord</h3>
+        <p data-i18n="support.discord_b">Devlogs written by the Mage herself, sneak peeks, and duels with the community.</p>
+        <a class="btn btn-discord" href="https://discord.gg/YqXCEsdDQh" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <span data-i18n="support.discord_btn">Join us on Discord</span>
+        </a>
+      </article>
+      <article class="support-panel reveal">
+        <h3 data-i18n="support.steam_t">Wishlist the game</h3>
+        <p data-i18n="support.steam_b">It's free, takes one click, and helps more than you think.</p>
+        <a class="btn btn-steam" id="supportSteam" href="#" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.97 9.24l5.36 2.21a2.83 2.83 0 0 1 1.6-.49h.14l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.4 2.43v.12a2.83 2.83 0 1 1-5.63.42L2.3 14.6A10 10 0 1 0 12 2Zm-5.72 14.6 1.23.51a2.12 2.12 0 1 0 1.15-2.76l1.27.52a1.56 1.56 0 1 1-1.2 2.88l-2.45-1.15Zm11-6.11a2.51 2.51 0 1 0-2.51 2.51 2.52 2.52 0 0 0 2.51-2.51Zm-4.39 0a1.89 1.89 0 1 1 1.88 1.89 1.88 1.88 0 0 1-1.88-1.89Z"/></svg>
+          <span data-i18n="hero.wishlist">Wishlist on Steam</span>
+          <em class="soon-chip" data-i18n="hero.wishlist_soon">page coming soon</em>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <img src="assets/img/logo.webp" alt="DARCNIA" class="footer-logo">
+    <p class="footer-tag" data-i18n="footer.tag">Forged between stars and marble.</p>
+    <nav class="footer-social" aria-label="Community links">
+      <a href="https://discord.gg/YqXCEsdDQh" target="_blank" rel="noopener" aria-label="Discord">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+      </a>
+      <a href="https://www.patreon.com/darcniamonster" target="_blank" rel="noopener" aria-label="Patreon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.82 2.41c-3.96 0-7.18 3.22-7.18 7.19 0 3.95 3.22 7.16 7.18 7.16 3.95 0 7.16-3.21 7.16-7.16 0-3.97-3.21-7.19-7.16-7.19M2.02 21.6h3.5V2.41h-3.5Z"/></svg>
+      </a>
+      <a href="#support" aria-label="Steam">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.97 9.24l5.36 2.21a2.83 2.83 0 0 1 1.6-.49h.14l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.4 2.43v.12a2.83 2.83 0 1 1-5.63.42L2.3 14.6A10 10 0 1 0 12 2Zm-5.72 14.6 1.23.51a2.12 2.12 0 1 0 1.15-2.76l1.27.52a1.56 1.56 0 1 1-1.2 2.88l-2.45-1.15Zm11-6.11a2.51 2.51 0 1 0-2.51 2.51 2.52 2.52 0 0 0 2.51-2.51Zm-4.39 0a1.89 1.89 0 1 1 1.88 1.89 1.88 1.88 0 0 1-1.88-1.89Z"/></svg>
+      </a>
+    </nav>
+    <p class="footer-rights" data-i18n="footer.rights">© 2026 Darcnia. All rights reserved.</p>
+  </footer>
+
+  <!-- CTA fija en móvil: aparece al scrollear pasado el hero -->
+  <div class="mobile-cta" id="mobileCta" aria-hidden="true">
+    <a class="btn btn-small btn-steam" id="mobileSteam" href="#support"><span data-i18n="nav.wishlist">Wishlist</span></a>
+    <a class="btn btn-small btn-patreon" href="https://www.patreon.com/darcniamonster" target="_blank" rel="noopener"><span>Patreon</span></a>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <!-- Detalle de carta (mismo lenguaje que CardDetail del juego) -->
+  <div class="card-detail" id="cardDetail" role="dialog" aria-modal="true" hidden>
+    <button class="lightbox-close" id="detailClose" aria-label="Close">×</button>
+    <div class="detail-stage" id="detailStage">
+      <img src="" alt="" id="detailImg" class="detail-card">
+      <div class="detail-panel" id="detailPanel">
+        <p class="detail-meta" id="detailMeta"></p>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-flavor" id="detailFlavor"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/cards_data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
