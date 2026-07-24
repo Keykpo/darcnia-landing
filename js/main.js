@@ -109,9 +109,28 @@ if (CONFIG.steamUrl) {
   const ms = document.getElementById("mobileSteam");
   if (ms) { ms.href = CONFIG.steamUrl; ms.target = "_blank"; }
 }
+const toTop = document.getElementById("toTop");
 addEventListener("scroll", () => {
   mobileCta.classList.toggle("show", scrollY > innerHeight * 0.9);
+  toTop.classList.toggle("show", scrollY > innerHeight * 1.5);
 }, { passive: true });
+toTop.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
+
+/* ---------------- scroll-spy: enciende el link de la sección visible ---------------- */
+const spyLinks = new Map();
+document.querySelectorAll(".nav-links a[href^='#']").forEach(a => {
+  const sec = document.getElementById(a.getAttribute("href").slice(1));
+  if (sec) spyLinks.set(sec, a);
+});
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    spyLinks.forEach(a => a.classList.remove("active"));
+    const link = spyLinks.get(e.target);
+    if (link) link.classList.add("active");
+  });
+}, { rootMargin: "-35% 0px -55% 0px" });
+spyLinks.forEach((a, sec) => spy.observe(sec));
 
 /* ---------------- starfield con parallax ---------------- */
 const canvas = document.getElementById("stars");
