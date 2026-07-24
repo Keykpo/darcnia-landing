@@ -36,8 +36,9 @@ html { scrollbar-color: #8f6b2a #0a0a16; scrollbar-width: thin; }
 html { scroll-behavior: smooth; }
 
 /* Seguro absoluto contra scroll horizontal: clip no crea contenedor de scroll.
-   SOLO en body — en html rompe el scroll vertical del documento. */
-body { overflow-x: clip; }
+   SOLO en body — en html rompe el scroll vertical del documento.
+   hidden primero = fallback para navegadores sin soporte de clip. */
+body { overflow-x: hidden; overflow-x: clip; }
 
 body {
   background: var(--bg0);
@@ -501,7 +502,9 @@ img { max-width: 100%; display: block; }
 .reveal.from-left { transform: translateX(-48px); }
 .reveal.from-right { transform: translateX(48px); }
 
-.roadmap2 { position: relative; margin-top: 3.4rem; }
+/* overflow-x clip: los paneles entran deslizándose ±48px y NO deben
+   generar espacio vacío a los costados mientras esperan revelarse. */
+.roadmap2 { position: relative; margin-top: 3.4rem; overflow-x: clip; padding-inline: 6px; margin-inline: -6px; }
 .rm2-track { /* la columna que une los medallones */
   position: absolute; left: 50%; top: -8px; bottom: -8px; width: 44px;
   transform: translateX(-50%);
