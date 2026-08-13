@@ -15,7 +15,7 @@ Todas las URLs absolutas (canonical, Open Graph, sitemap, JSON-LD) ya apuntan a 
 En `js/main.js`, bloque `CONFIG`:
 
 ```js
-steamUrl: null,   // ← URL de la página de Steam cuando exista
+steamUrl: "https://store.steampowered.com/app/5004590/Darcnia_Monster/",  // ✅ listo (2026-08-13)
 youtubeId: null,  // ← id de YouTube del tráiler (pisa al video local si se setea)
 ```
 

@@ -5,7 +5,7 @@
 history.scrollRestoration = "manual";
 
 const CONFIG = {
-  steamUrl: null,           // ej: "https://store.steampowered.com/app/XXXXXXX/DARCNIA/"
+  steamUrl: "https://store.steampowered.com/app/5004590/Darcnia_Monster/",
   youtubeId: null,          // ej: "dQw4w9WgXcQ" — id del tráiler en YouTube (prioridad sobre localVideo)
   localVideo: "assets/video/trailer.mp4",
   patreonUrl: "https://www.patreon.com/darcniamonster",
@@ -276,7 +276,7 @@ addEventListener("keydown", e => {
 const music = new Audio("assets/audio/menu.mp3");
 music.loop = true;
 music.volume = 0;
-const MUSIC_VOL = 0.32;
+const MUSIC_VOL = 0.16;
 let musicMuted = localStorage.getItem("darcnia_music") === "off";
 const musicBtn = document.getElementById("musicBtn");
 
@@ -319,11 +319,11 @@ musicUi();
 
 /* ---------------- SFX sutiles (opcionales) ---------------- */
 if (CONFIG.sfx) {
-  const mk = src => { const a = new Audio(src); a.volume = 0.18; a.preload = "auto"; return a; };
+  const mk = src => { const a = new Audio(src); a.volume = 0.09; a.preload = "auto"; return a; };
   const hoverS = mk("assets/sfx/hover.mp3");
   const clickS = mk("assets/sfx/click.mp3");
   window._detailSfx = mk("assets/sfx/detail.mp3");
-  window._detailSfx.volume = 0.22;
+  window._detailSfx.volume = 0.11;
   let armed = false;
   addEventListener("pointerdown", () => { armed = true; }, { once: true, capture: true });
   document.querySelectorAll(".btn").forEach(b => {
