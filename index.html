@@ -40,7 +40,7 @@
    "description":"A tactical card game where every card you play rises onto the board as a living pixel-art monster. Climb the Tower, seal its keepers, master the Runes.",
    "genre":["Card Game","Strategy"],"gamePlatform":"PC","operatingSystem":"Windows",
    "author":{"@type":"Person","name":"Darcnia"},"inLanguage":["en","es"],
-   "sameAs":["https://store.steampowered.com/app/5004590/Darcnia_Monster/","https://www.patreon.com/darcniamonster","https://discord.gg/5ZPcgBxWdc"],
+   "sameAs":["https://store.steampowered.com/app/5004590/Darcnia_Monster/","https://discord.gg/5ZPcgBxWdc"],
    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/PreOrder"}}
   </script>
   <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
@@ -99,9 +99,9 @@
           <span data-i18n="hero.wishlist">Wishlist on Steam</span>
           <em class="soon-chip" id="steamSoon" data-i18n="hero.wishlist_soon">page coming soon</em>
         </a>
-        <a class="btn btn-patreon" id="heroPatreon" href="https://www.patreon.com/darcniamonster" target="_blank" rel="noopener">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.82 2.41c-3.96 0-7.18 3.22-7.18 7.19 0 3.95 3.22 7.16 7.18 7.16 3.95 0 7.16-3.21 7.16-7.16 0-3.97-3.21-7.19-7.16-7.19M2.02 21.6h3.5V2.41h-3.5Z"/></svg>
-          <span data-i18n="hero.patreon">Support on Patreon</span>
+        <a class="btn btn-discord" id="heroDiscord" href="https://discord.gg/5ZPcgBxWdc" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <span data-i18n="hero.discord">Join the Discord</span>
         </a>
       </div>
 
@@ -304,11 +304,12 @@
     <p class="section-sub reveal" data-i18n="support.body">Darcnia is being crafted by a tiny team with an enormous obsession: every card, every sprite, every rune drawn with intent. Your support decides how high the Tower goes.</p>
     <div class="support-grid">
       <article class="support-panel reveal">
-        <h3 data-i18n="support.patreon_t">Become a patron</h3>
-        <p data-i18n="support.patreon_b">Immortalize a memory, someone you love, or a wild idea: design a card with me and it lives in Darcnia forever.</p>
-        <a class="btn btn-patreon" href="https://www.patreon.com/darcniamonster" target="_blank" rel="noopener">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.82 2.41c-3.96 0-7.18 3.22-7.18 7.19 0 3.95 3.22 7.16 7.18 7.16 3.95 0 7.16-3.21 7.16-7.16 0-3.97-3.21-7.19-7.16-7.19M2.02 21.6h3.5V2.41h-3.5Z"/></svg>
-          <span data-i18n="support.patreon_cta">Create your card, forever</span>
+        <h3 data-i18n="support.steam_t">Wishlist the game</h3>
+        <p data-i18n="support.steam_b">It's free, takes one click, and helps more than you think.</p>
+        <a class="btn btn-steam" id="supportSteam" href="#" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.97 9.24l5.36 2.21a2.83 2.83 0 0 1 1.6-.49h.14l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.4 2.43v.12a2.83 2.83 0 1 1-5.63.42L2.3 14.6A10 10 0 1 0 12 2Zm-5.72 14.6 1.23.51a2.12 2.12 0 1 0 1.15-2.76l1.27.52a1.56 1.56 0 1 1-1.2 2.88l-2.45-1.15Zm11-6.11a2.51 2.51 0 1 0-2.51 2.51 2.52 2.52 0 0 0 2.51-2.51Zm-4.39 0a1.89 1.89 0 1 1 1.88 1.89 1.88 1.88 0 0 1-1.88-1.89Z"/></svg>
+          <span data-i18n="hero.wishlist">Wishlist on Steam</span>
+          <em class="soon-chip" data-i18n="hero.wishlist_soon">page coming soon</em>
         </a>
       </article>
       <article class="support-panel reveal">
@@ -317,15 +318,6 @@
         <a class="btn btn-discord" href="https://discord.gg/5ZPcgBxWdc" target="_blank" rel="noopener">
           <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
           <span data-i18n="support.discord_btn">Join us on Discord</span>
-        </a>
-      </article>
-      <article class="support-panel reveal">
-        <h3 data-i18n="support.steam_t">Wishlist the game</h3>
-        <p data-i18n="support.steam_b">It's free, takes one click, and helps more than you think.</p>
-        <a class="btn btn-steam" id="supportSteam" href="#" rel="noopener">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.97 9.24l5.36 2.21a2.83 2.83 0 0 1 1.6-.49h.14l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.4 2.43v.12a2.83 2.83 0 1 1-5.63.42L2.3 14.6A10 10 0 1 0 12 2Zm-5.72 14.6 1.23.51a2.12 2.12 0 1 0 1.15-2.76l1.27.52a1.56 1.56 0 1 1-1.2 2.88l-2.45-1.15Zm11-6.11a2.51 2.51 0 1 0-2.51 2.51 2.52 2.52 0 0 0 2.51-2.51Zm-4.39 0a1.89 1.89 0 1 1 1.88 1.89 1.88 1.88 0 0 1-1.88-1.89Z"/></svg>
-          <span data-i18n="hero.wishlist">Wishlist on Steam</span>
-          <em class="soon-chip" data-i18n="hero.wishlist_soon">page coming soon</em>
         </a>
       </article>
     </div>
@@ -338,9 +330,6 @@
     <nav class="footer-social" aria-label="Community links">
       <a href="https://discord.gg/5ZPcgBxWdc" target="_blank" rel="noopener" aria-label="Discord">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-      </a>
-      <a href="https://www.patreon.com/darcniamonster" target="_blank" rel="noopener" aria-label="Patreon">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.82 2.41c-3.96 0-7.18 3.22-7.18 7.19 0 3.95 3.22 7.16 7.18 7.16 3.95 0 7.16-3.21 7.16-7.16 0-3.97-3.21-7.19-7.16-7.19M2.02 21.6h3.5V2.41h-3.5Z"/></svg>
       </a>
       <a href="https://store.steampowered.com/app/5004590/Darcnia_Monster/" target="_blank" rel="noopener" aria-label="Steam">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.97 9.24l5.36 2.21a2.83 2.83 0 0 1 1.6-.49h.14l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.4 2.43v.12a2.83 2.83 0 1 1-5.63.42L2.3 14.6A10 10 0 1 0 12 2Zm-5.72 14.6 1.23.51a2.12 2.12 0 1 0 1.15-2.76l1.27.52a1.56 1.56 0 1 1-1.2 2.88l-2.45-1.15Zm11-6.11a2.51 2.51 0 1 0-2.51 2.51 2.52 2.52 0 0 0 2.51-2.51Zm-4.39 0a1.89 1.89 0 1 1 1.88 1.89 1.88 1.88 0 0 1-1.88-1.89Z"/></svg>
@@ -357,7 +346,7 @@
   <!-- CTA fija en móvil: aparece al scrollear pasado el hero -->
   <div class="mobile-cta" id="mobileCta" aria-hidden="true">
     <a class="btn btn-small btn-steam" id="mobileSteam" href="#support"><span data-i18n="nav.wishlist">Wishlist</span></a>
-    <a class="btn btn-small btn-patreon" href="https://www.patreon.com/darcniamonster" target="_blank" rel="noopener"><span>Patreon</span></a>
+    <a class="btn btn-small btn-discord" href="https://discord.gg/5ZPcgBxWdc" target="_blank" rel="noopener"><span>Discord</span></a>
   </div>
 
   <!-- Lightbox -->

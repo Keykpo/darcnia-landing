@@ -15,7 +15,6 @@
   --violet: #8b5cf6;
   --violet-deep: #2a1a4d;
   --steam: #66c0f4;
-  --patreon: #ff8476;
   --font-display: "Cinzel", "Times New Roman", serif;
   --font-body: "EB Garamond", Georgia, serif;
 }
@@ -164,8 +163,6 @@ img { max-width: 100%; display: block; }
 
 .btn-steam { color: #cfe8fa; }
 .btn-steam .ico { color: var(--steam); }
-.btn-patreon { color: #ffd9d3; }
-.btn-patreon .ico { color: var(--patreon); }
 .btn-discord { color: #dfe3ff; }
 .btn-discord .ico { color: #7a86ff; }
 

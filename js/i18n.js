@@ -14,7 +14,7 @@ window.I18N = {
     "hero.sub": "A tactical card game where every card you play rises onto the board as a living pixel-art monster.",
     "hero.wishlist": "Wishlist on Steam",
     "hero.wishlist_soon": "page coming soon",
-    "hero.patreon": "Support on Patreon",
+    "hero.discord": "Join the Discord",
     "hero.trailer_soon": "Trailer coming soon",
     "hero.trailer_play": "Watch the trailer",
 
@@ -81,9 +81,6 @@ window.I18N = {
 
     "support.title": "Join the ascent",
     "support.body": "Darcnia is crafted entirely by one person — every card, every sprite, every rune drawn with intent. Your support decides how high the Tower goes.",
-    "support.patreon_t": "Become a patron",
-    "support.patreon_b": "Immortalize a memory, someone you love, or a wild idea: design a card with me and it lives in Darcnia forever.",
-    "support.patreon_cta": "Your card, forever",
     "support.steam_t": "Wishlist the game",
     "support.steam_b": "It's free, takes one click, and helps more than you think.",
     "support.discord_t": "Join the Discord",
@@ -107,7 +104,7 @@ window.I18N = {
     "hero.sub": "Un juego de cartas táctico donde cada carta que juegas se alza sobre el tablero como un monstruo de pixel art con vida propia.",
     "hero.wishlist": "Lista de deseados en Steam",
     "hero.wishlist_soon": "página muy pronto",
-    "hero.patreon": "Apóyanos en Patreon",
+    "hero.discord": "Únete al Discord",
     "hero.trailer_soon": "Tráiler muy pronto",
     "hero.trailer_play": "Mira el tráiler",
 
@@ -174,9 +171,6 @@ window.I18N = {
 
     "support.title": "Únete al ascenso",
     "support.body": "Darcnia lo crea una sola persona: cada carta, cada sprite y cada runa hechos con intención. Tu apoyo decide qué tan alto llega la Torre.",
-    "support.patreon_t": "Vuélvete mecenas",
-    "support.patreon_b": "Inmortaliza un recuerdo, a alguien que quieres o una idea: diseña una carta conmigo y vivirá en Darcnia para siempre.",
-    "support.patreon_cta": "Tu carta, para siempre",
     "support.steam_t": "Lista de deseados",
     "support.steam_b": "Es gratis, toma un clic y ayuda más de lo que crees.",
     "support.discord_t": "Únete al Discord",

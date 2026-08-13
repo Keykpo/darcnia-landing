@@ -8,7 +8,7 @@ const CONFIG = {
   steamUrl: "https://store.steampowered.com/app/5004590/Darcnia_Monster/",
   youtubeId: null,          // ej: "dQw4w9WgXcQ" — id del tráiler en YouTube (prioridad sobre localVideo)
   localVideo: "assets/video/trailer.mp4",
-  patreonUrl: "https://www.patreon.com/darcniamonster",
+  discordUrl: "https://discord.gg/5ZPcgBxWdc",
   sfx: true                 // sonidos sutiles de UI si existen los archivos
 };
 
