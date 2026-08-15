@@ -88,6 +88,10 @@ window.I18N = {
     "support.discord_btn": "Join us on Discord",
 
     "footer.tag": "Forged between stars and marble.",
+    /* F6-12: the two policies must be reachable from the public site — the
+       store page and the IARC declaration both point here. */
+    "footer.privacy": "Privacy policy",
+    "footer.moderation": "Moderation policy",
     "footer.rights": "© 2026 Darcnia. All rights reserved."
   },
 
@@ -178,6 +182,10 @@ window.I18N = {
     "support.discord_btn": "Súmate al Discord",
 
     "footer.tag": "Forjado entre estrellas y mármol.",
+    /* F6-12: las dos políticas tienen que poder alcanzarse desde el sitio
+       público — la ficha de Steam y la declaración de IARC apuntan acá. */
+    "footer.privacy": "Política de privacidad",
+    "footer.moderation": "Política de moderación",
     "footer.rights": "© 2026 Darcnia. Todos los derechos reservados."
   }
 };

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de moderación — Darcnia Monster</title>
+<meta name="description" content="Reglas del chat de Darcnia Monster, qué hace el filtro automático y qué no detecta, cómo se revisa un reporte y qué sanciones existen.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://darcniamonster.com/moderacion.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg0:#07070f;--bg1:#0d0d1e;--bg2:#14142c;--ink:#e9e3f6;--ink-dim:#a99fc4;
+--gold:#e3b95e;--gold-hi:#f7dd9a;--gold-dark:#8f6b2a;--violet:#8b5cf6;
+--font-display:"Cinzel","Times New Roman",serif;--font-body:"EB Garamond",Georgia,serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg0);color:var(--ink);font-family:var(--font-body);
+font-size:1.0625rem;line-height:1.65;overflow-x:clip}
+.wrap{max-width:56rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+header.top{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;
+justify-content:space-between;border-bottom:1px solid rgba(227,185,94,.25);
+padding-bottom:1.25rem;margin-bottom:2rem}
+a.home{font-family:var(--font-display);letter-spacing:.14em;text-transform:uppercase;
+font-size:.85rem;color:var(--gold);text-decoration:none}
+a.home:hover{color:var(--gold-hi)}
+.langs{display:flex;gap:.5rem}
+.langs button{font-family:var(--font-display);font-size:.8rem;letter-spacing:.1em;
+background:transparent;color:var(--ink-dim);border:1px solid rgba(227,185,94,.35);
+border-radius:4px;padding:.3rem .7rem;cursor:pointer}
+.langs button.active{background:rgba(227,185,94,.15);color:var(--gold-hi);
+border-color:var(--gold)}
+h1{font-family:var(--font-display);font-size:clamp(1.7rem,4vw,2.5rem);
+color:var(--gold-hi);line-height:1.2;margin-bottom:.35rem}
+.sub{color:var(--ink-dim);font-size:.95rem;margin-bottom:2.25rem}
+h2{font-family:var(--font-display);font-size:1.3rem;color:var(--gold);
+margin:2.5rem 0 .75rem;line-height:1.3}
+h3{font-family:var(--font-display);font-size:1.05rem;color:var(--ink);
+margin:1.5rem 0 .5rem}
+p{margin-bottom:.9rem}
+ul,ol{margin:0 0 1rem 1.35rem}
+li{margin-bottom:.4rem}
+strong{color:var(--gold-hi);font-weight:500}
+table{width:100%;border-collapse:collapse;margin:.5rem 0 1.5rem;font-size:.95rem;
+display:block;overflow-x:auto}
+th,td{text-align:left;padding:.55rem .8rem;border-bottom:1px solid rgba(169,159,196,.2);
+vertical-align:top}
+th{font-family:var(--font-display);font-size:.8rem;letter-spacing:.08em;
+text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.nota{border-left:3px solid var(--gold-dark);background:rgba(20,20,44,.65);
+padding:1rem 1.15rem;margin:1.25rem 0;border-radius:0 6px 6px 0}
+.pie{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid rgba(227,185,94,.25);
+color:var(--ink-dim);font-size:.9rem}
+.pie a{color:var(--gold)}
+/* Los enlaces del cuerpo (correos, política hermana) heredaban el azul del
+   navegador sobre un fondo casi negro: ilegible. Se les da el dorado claro y se
+   deja el subrayado, que es lo que los distingue sin depender del color. */
+p a,li a,td a{color:var(--gold-hi);text-decoration:underline}
+[data-lang]{display:none}
+[data-lang].on{display:block}
+@media (max-width:600px){.wrap{padding:1.75rem 1rem 4rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a class="home" href="/">← Darcnia Monster</a>
+  <div class="langs">
+    <button id="bEs" type="button" aria-pressed="true">ES</button>
+    <button id="bEn" type="button" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<!-- ══════════════════════════ ESPAÑOL ══════════════════════════ -->
+<section data-lang="es" class="on">
+
+<h1>Política de moderación</h1>
+<p class="sub">Última actualización: 15 de agosto de 2026 · Aplica al chat, a los nombres y a todo texto escrito por jugadores en Darcnia Monster.</p>
+
+<p>Darcnia Monster tiene chat de texto entre jugadores adultos. Esta página dice
+qué está permitido, qué hace el sistema solo, <strong>qué no hace</strong>, qué
+hace una persona y qué puedes hacer tú en el momento sin esperar a nadie.</p>
+
+<p><strong>El juego está en diez idiomas</strong> —español (latinoamericano y de
+España), inglés, portugués (de Brasil y de Portugal), francés, alemán, ruso,
+polaco, turco, japonés y chino (simplificado y tradicional)—, así que el chat
+también. Esta página está sólo en español y en inglés: ver la nota del principio
+de la <a href="privacidad.html">política de privacidad</a>.</p>
+
+<h2>1. Dónde hay texto escrito por jugadores</h2>
+<table>
+<thead><tr><th>Superficie</th><th>Qué se puede escribir</th><th>Quién lo ve</th></tr></thead>
+<tbody>
+<tr><td>Chat privado</td><td>Texto libre, hasta 300 caracteres</td>
+    <td>Sólo la otra persona de la conversación</td></tr>
+<tr><td>Chat de la mesa (PvP)</td>
+    <td><strong>Sólo 12 frases predefinidas</strong> («buena suerte», «bien
+    jugado»…). No hay campo de texto</td>
+    <td>Tu rival de esa partida</td></tr>
+<tr><td>Nombre de duelista</td><td>Texto corto, de 3 a 16 caracteres</td><td>Es público</td></tr>
+<tr><td>Frase de estado</td><td>Hasta 60 caracteres</td><td>Quien vea tu perfil</td></tr>
+<tr><td>Nota de un reporte</td><td>Texto libre</td><td>Sólo moderación</td></tr>
+</tbody>
+</table>
+<p>Eso es todo. <strong>No hay chat de voz, no se pueden subir imágenes ni
+archivos, y no se pueden enviar enlaces con vista previa.</strong> Con un
+desconocido que te trajo el emparejamiento no se puede escribir texto libre en
+ningún caso: sólo las doce frases de la lista.</p>
+<p>Y hay dos puertas antes del primer mensaje: <strong>el chat nace cerrado para
+todas las cuentas</strong> —se abre al declarar 18 años o más— y, ya abierto,
+puedes decidir que sólo te escriban tus amigos, o nadie.</p>
+
+<h2>2. Qué no se permite</h2>
+<p>En cualquiera de esas superficies está prohibido:</p>
+<ul>
+  <li><strong>Acoso, amenazas e insultos dirigidos</strong> a una persona.</li>
+  <li><strong>Odio o desprecio</strong> por raza, origen, religión, discapacidad,
+      género u orientación sexual.</li>
+  <li><strong>Contenido sexual</strong>, y <strong>cualquier contacto de
+      naturaleza sexual dirigido a un menor</strong>. Esto último no tiene
+      advertencia previa ni segunda oportunidad.</li>
+  <li><strong>Difundir datos personales</strong> de alguien, propios o ajenos.</li>
+  <li><strong>Estafas, phishing, venta de cuentas</strong> o de bienes del juego
+      fuera del juego.</li>
+  <li><strong>Spam, publicidad y automatización</strong> del chat.</li>
+  <li><strong>Suplantar</strong> a otro jugador o al equipo del juego.</li>
+</ul>
+
+<h2>3. Lo que puedes hacer tú, ahora mismo</h2>
+<p>Esto es lo más rápido que hay, y no depende de que nadie revise nada. Desde
+cualquier mensaje:</p>
+<ul>
+  <li><strong>Silenciar</strong> la conversación por 1 hora, 1 día o 1 semana.
+      Silenciar apaga el aviso, no la conversación: los mensajes del otro siguen
+      entrando al hilo y quedan ahí. Es a propósito —dejar de ser interrumpido no
+      debería costarte la evidencia de lo que te mandaron.</li>
+  <li><strong>Bloquear</strong> a la persona. El bloqueo corta las dos
+      direcciones y <strong>la conversación desaparece de las dos listas</strong>:
+      no queda una ventana abierta desde la que seguir escribiendo. El hilo no se
+      borra; la evidencia queda.</li>
+  <li><strong>Reportar</strong>, eligiendo el motivo —acoso, spam, odio, trampa u
+      otro— y agregando lo que quieras contar. Se puede reportar un mensaje, un
+      perfil, un nombre o una conducta en un duelo, y puedes bloquear en el mismo
+      paso.</li>
+  <li><strong>Cerrarle la puerta a los desconocidos</strong>: en Cuenta y
+      privacidad puedes poner «¿quién puede escribirme?» en <em>sólo amigos</em>
+      o en <em>nadie</em>.</li>
+</ul>
+<p>Cuando reportas, <strong>además te silenciamos esa conversación 24 horas
+automáticamente</strong>. Reportar y seguir recibiendo mensajes de la misma
+persona no serviría de nada: la denuncia tarda, el acoso no.</p>
+
+<h2>4. Lo que hace el sistema solo, y lo que no</h2>
+<p>Hay un filtro automático de groserías, y cubre <strong>los diez idiomas del
+juego</strong>. Actúa <strong>al escribir</strong>: tapa la palabra con asteriscos
+antes de guardarla, y el texto original no se guarda en ningún lado. En un
+<strong>nombre</strong> de jugador no tapa nada: lo rechaza, porque un nombre es
+permanente y quedarse llamado <em>****</em> para siempre es peor. No depende del
+idioma que tengas puesto en Opciones: el filtro entero se le pasa a
+<strong>todos</strong> los mensajes, se escriban en el idioma que se escriban.
+También hay un límite de velocidad —tres mensajes cada dos segundos— para que el
+spam no sea gratis.</p>
+<div class="nota">
+<p style="margin-bottom:.5rem"><strong>Y no rinde igual en los diez, así que no
+vamos a decir que sí.</strong> Un filtro de palabras depende de cómo el idioma
+separa las palabras, y no todos las separan igual. Son tres niveles distintos —
+siete idiomas, uno y dos— y esto es lo que hay:</p>
+<ul style="margin-bottom:.5rem">
+  <li><strong>Español, inglés, portugués, francés, alemán, polaco y turco</strong>
+      —los que se escriben con nuestro alfabeto— son donde <strong>mejor
+      funciona</strong>: el filtro reconoce el principio y el final de cada
+      palabra, resuelve los acentos, las mayúsculas, las letras repetidas, los
+      caracteres invisibles metidos en el medio, las letras cambiadas por números
+      o símbolos, y las terminaciones más comunes de una misma raíz.</li>
+  <li>En <strong>ruso</strong> hace todo eso <em>menos</em> las terminaciones. El
+      ruso declina mucho más que el español, y las formas declinadas de un insulto
+      que no estén escritas una por una en la lista <strong>pasan</strong>. La
+      cobertura es real pero es más angosta.</li>
+  <li>En <strong>japonés y chino</strong> es donde <strong>menos atrapa</strong>, y
+      no por descuido: esos idiomas no separan las palabras con espacios, así que
+      el filtro sólo puede buscar la secuencia de caracteres tal cual, en cualquier
+      parte de la frase. Eso hace que muchísimas groserías corrientes —incluidas
+      las más comunes de los dos idiomas— <strong>estén deliberadamente fuera de
+      la lista</strong>, porque como secuencia suelta aparecen dentro de palabras
+      perfectamente normales: taparlas censuraría a gente que no dijo nada. Entre
+      censurar de más a un inocente y dejar pasar una grosería, elegimos lo
+      segundo, y en japonés y chino esa elección se paga más seguido.</li>
+</ul>
+<p style="margin-bottom:0">Nada de esto lo arregla una lista más larga: es cómo
+funcionan las escrituras. Lo escribimos acá porque prometer «filtramos igual en
+diez idiomas» sería falso, y lo que sostiene la moderación de verdad es lo de
+abajo, no el filtro.</p>
+</div>
+<div class="nota">
+<p style="margin-bottom:.5rem"><strong>Y decimos de frente lo que ese filtro NO
+hace</strong>, porque un filtro de palabras que se hace pasar por moderación es
+peor que no tener filtro: hace que nadie mire.</p>
+<ul style="margin-bottom:0">
+  <li><strong>No entiende el contexto.</strong> «Te voy a matar» pasa entero y
+      ninguna lista de palabras lo detiene. Al revés también: «mierda, perdí» sale
+      tapado sin haber sido una agresión.</li>
+  <li><strong>No frena el acoso.</strong> La amenaza, el hostigamiento dirigido, el
+      acercamiento a un menor y el odio por rodeos no usan las palabras de una
+      lista, justamente porque quien acosa las evita.</li>
+  <li><strong>No es exhaustivo y nunca lo va a ser.</strong> El argot de diez
+      idiomas cambia más rápido que una lista escrita a mano. Va a haber huecos,
+      siempre, y más en unos idiomas que en otros: ver el recuadro de arriba.</li>
+  <li><strong>Deja pasar las palabras ambiguas a propósito.</strong> Ante la duda
+      entre tapar una palabra que en un país es un insulto y en otro es corriente,
+      elegimos no taparla: un filtro que le tacha el mensaje —o el apellido— a
+      alguien que no hizo nada enseña a ignorarlo.</li>
+  <li><strong>No decide sanciones.</strong> Nada de lo que hace el filtro banea,
+      silencia ni cuenta faltas.</li>
+</ul>
+</div>
+<p>Lo que sí frena esas cosas es la cadena completa: <strong>bloquear + silenciar
++ reportar + evidencia retenida + una persona leyendo</strong>. El filtro es un
+piso, y tiene sentido porque arriba hay una persona, no en lugar de ella.</p>
+
+<h2>5. Qué pasa con un reporte</h2>
+<ol>
+  <li>Se guarda el reporte con el motivo, tu nota y la hora.</li>
+  <li><strong>Se retiene la evidencia</strong>: el mensaje denunciado y los cinco
+      anteriores quedan a salvo del borrado automático de 30 días hasta que se
+      revise. Sin eso, quien acosa podría esperar treinta días y llegar a la
+      revisión sin texto.</li>
+  <li>Se te silencia esa conversación 24 horas.</li>
+  <li><strong>Una persona lo lee</strong> y decide. Objetivo de respuesta:
+      <strong>4 días</strong>. Es un objetivo, no una garantía; ver la sección 9.
+      La herramienta con la que se leen los reportes marca vencido el caso que
+      pasa de ese plazo.</li>
+</ol>
+<p>Si reportas dos veces a la misma persona dentro de 24 horas, la segunda no abre
+otro caso —pero <strong>la evidencia nueva se retiene igual</strong>, enganchada al
+reporte que ya existe. Lo que se deduplica es el papeleo, nunca la prueba.</p>
+<div class="nota">
+<p style="margin-bottom:0"><strong>Ningún reporte sanciona automáticamente</strong>,
+y esto es una decisión, no una carencia. Un reporte que castiga solo es un arma:
+cinco cuentas coordinadas apagarían a quien quisieran. Sobre la persona reportada
+no cae nada hasta que alguien lee lo que pasó.</p>
+</div>
+
+<h2>6. Sanciones</h2>
+<p>Según la gravedad y los antecedentes, quien revisa puede hacer <strong>dos
+cosas</strong>. Son dos, y no una lista más larga, porque es lo que el sistema
+sabe aplicar:</p>
+<ul>
+  <li><strong>Cerrar el chat de la cuenta</strong>, por un plazo o de forma
+      permanente. La cuenta sigue jugando, comprando e intercambiando con
+      normalidad: cierra el chat y nada más. <strong>Si tiene plazo se levanta
+      sola</strong> —no tienes que pedir nada—, pero <strong>no en el minuto
+      exacto</strong>: la levanta una tarea que corre de madrugada, así que el
+      chat puede seguir cerrado unas horas después de la hora de vencimiento. Si
+      necesitas que sea en el momento, escribe (sección 7) y se levanta a mano.
+      Y el juego te lo dice en los <strong>tres</strong> sitios donde ibas a
+      preguntártelo —la pestaña de <em>Chat</em>, la rueda de mensajes del duelo y
+      <em>Cuenta y privacidad</em>—: que está cerrado <strong>por
+      moderación</strong> —no por tu edad ni por un error—, hasta qué día y a qué
+      hora, o <strong>que no tiene fecha de fin</strong> si es permanente, y qué
+      hacer si crees que se equivocaron.</li>
+  <li><strong>Suspender la cuenta</strong>, por un tiempo o de forma permanente.
+      Mientras dura, el servidor no la deja jugar en línea.</li>
+</ul>
+<p>Las dos se aplican <strong>a mano, sobre el servidor</strong>. Hay una
+herramienta de consola —la bandeja— que lista los reportes sin revisar, abre el
+caso con la evidencia, deja escrita la decisión y aplica o levanta el cierre del
+chat; la corre una persona, entrando al servidor. La suspensión se escribe
+directamente sobre la base, sin herramienta. <strong>No hay panel web, no hay
+ninguna dirección de la aplicación que sancione y no hay automatización que
+dispare nada</strong>: ningún reporte, por sí solo, le mueve un pelo a nadie. Eso
+también quiere decir que todo depende de que una persona llegue a leer el caso.
+Ver la sección 9.</p>
+<p>El contenido sexual dirigido a un menor, las amenazas creíbles de violencia y el
+material de abuso infantil se sancionan con cierre permanente en el primer caso, y
+se denuncian a las autoridades competentes.</p>
+<p><strong>Borrarse la cuenta no borra una suspensión.</strong> Mientras dura,
+conservamos su identificador de Steam —y con él la edad declarada y el chat
+cerrado— para que volver no sea tan simple como registrarse de nuevo. Un chat
+cerrado que <em>no</em> viene acompañado de una suspensión no sobrevive: esa cuenta
+se anonimiza entera y su fila deja de ser de nadie. Está explicado en la
+<a href="privacidad.html">política de privacidad</a>, sección 6.</p>
+<p>Tampoco borra los reportes: <strong>los que hicieron sobre ti sobreviven a tu
+cuenta</strong>, con su motivo, su nota y su hora, y no los borra ninguna tarea. La
+denuncia es de quien la escribió.</p>
+
+<h2>7. Si te sancionaron y crees que está mal</h2>
+<p>Escribe a
+<strong><a href="mailto:francisarroyo20@gmail.com">francisarroyo20@gmail.com</a></strong>
+con tu nombre de duelista completo (nombre y número). Revisamos la decisión y te
+contestamos. Si nos equivocamos, lo revertimos.</p>
+
+<h2>8. Menores</h2>
+<p><strong>Las cuentas de menores de 18 años tienen el chat cerrado</strong> —no
+pueden enviar ni recibir mensajes— y no existe ningún interruptor que lo abra. Un
+adulto tampoco le puede escribir a un menor: el rechazo mira a las dos partes. A
+las cuentas que declaran menos de 13 años, además, el servidor les rechaza dos
+cosas concretas: <strong>iniciar una compra con dinero real y abrir un
+intercambio</strong> en el Ágora. Son los dos únicos sitios donde se aplica esa
+puerta, y se sostienen entre sí, porque el Ágora exige haber hecho antes una
+compra real. El detalle está en la
+<a href="privacidad.html">política de privacidad</a>, sección 7.</p>
+<p>Si eres madre, padre o tutor y quieres reportar algo relacionado con un menor,
+escribe a
+<strong><a href="mailto:francisarroyo20@gmail.com">francisarroyo20@gmail.com</a></strong>:
+esos casos se miran primero.</p>
+
+<h2>9. Quién modera, con todas las letras</h2>
+<p>Preferimos que esto lo leas acá y no que lo descubras esperando.</p>
+<div class="nota">
+<p><strong>Darcnia lo hace una sola persona, y esa persona es la que lee los
+reportes.</strong> No hay un equipo de moderación, no hay turnos de 24 horas y no
+hay revisión en tiempo real. Los reportes se leen a mano, con la bandeja de la
+sección 6, entrando al servidor, y en tandas: salen <strong>los más viejos
+primero</strong> y la propia herramienta marca vencido el caso que pasó los cuatro
+días. <strong>Y nada te avisa a ti de que se revisó</strong>: si quieres saber en
+qué quedó tu reporte, escribe.</p>
+<p style="margin-bottom:0">Por eso las herramientas que <em>no</em> dependen de
+nosotros son las importantes, y son inmediatas: <strong>silenciar, bloquear y
+cerrarle la puerta a los desconocidos</strong> surten efecto en el momento en que
+las aprietas. Si algo es urgente —una amenaza, algo que involucra a un menor—, el
+camino más rápido no es el formulario: es escribir a
+<strong><a href="mailto:francisarroyo20@gmail.com">francisarroyo20@gmail.com</a></strong>.</p>
+</div>
+<p>Lo decimos porque la alternativa sería escribir «moderación 24/7» y que fuera
+falso.</p>
+
+<div class="pie">
+<p><a href="/">Volver al sitio</a> · <a href="privacidad.html">Política de privacidad</a></p>
+<p>© 2026 Darcnia. Todos los derechos reservados.</p>
+</div>
+
+</section>
+
+<!-- ══════════════════════════ ENGLISH ══════════════════════════ -->
+<section data-lang="en">
+
+<h1>Moderation Policy</h1>
+<p class="sub">Last updated: 15 August 2026 · Applies to chat, names and every piece of player-written text in Darcnia Monster.</p>
+
+<p>Darcnia Monster has text chat between adult players. This page states what is
+allowed, what the system does on its own, <strong>what it does not do</strong>,
+what a human does, and what you can do right now without waiting for anyone.</p>
+
+<p><strong>The game is in ten languages</strong> —Spanish (Latin American and
+European), English, Portuguese (Brazilian and European), French, German, Russian,
+Polish, Turkish, Japanese and Chinese (Simplified and Traditional)— and so is
+the chat. This page exists only in Spanish and English: see the note at the top of
+the <a href="privacidad.html">privacy policy</a>.</p>
+
+<h2>1. Where player-written text exists</h2>
+<table>
+<thead><tr><th>Surface</th><th>What can be written</th><th>Who sees it</th></tr></thead>
+<tbody>
+<tr><td>Private chat</td><td>Free text, up to 300 characters</td>
+    <td>Only the other person in the conversation</td></tr>
+<tr><td>Match chat (PvP)</td>
+    <td><strong>12 preset phrases only</strong> ("good luck", "well played"…).
+    There is no text field</td>
+    <td>Your opponent in that match</td></tr>
+<tr><td>Duelist name</td><td>Short text, 3 to 16 characters</td><td>Public</td></tr>
+<tr><td>Status phrase</td><td>Up to 60 characters</td><td>Anyone who views your profile</td></tr>
+<tr><td>Report note</td><td>Free text</td><td>Moderation only</td></tr>
+</tbody>
+</table>
+<p>That is the whole surface. <strong>There is no voice chat, no image or file
+upload, and no link previews.</strong> With a stranger brought to you by
+matchmaking, free text is never possible: only the twelve preset phrases.</p>
+<p>And there are two doors before the first message: <strong>chat starts closed on
+every account</strong> —it opens when you declare 18 or older— and, once open, you
+can decide that only friends may message you, or nobody.</p>
+
+<h2>2. What is not allowed</h2>
+<p>On any of those surfaces, the following is prohibited:</p>
+<ul>
+  <li><strong>Harassment, threats and targeted insults</strong> against a person.</li>
+  <li><strong>Hatred or contempt</strong> based on race, origin, religion,
+      disability, gender or sexual orientation.</li>
+  <li><strong>Sexual content</strong>, and <strong>any sexual approach directed at
+      a minor</strong>. That last one gets no warning and no second chance.</li>
+  <li><strong>Sharing personal data</strong>, yours or anyone else's.</li>
+  <li><strong>Scams, phishing, account selling</strong> or trading game goods
+      outside the game.</li>
+  <li><strong>Spam, advertising and automating</strong> chat.</li>
+  <li><strong>Impersonating</strong> another player or the game's team.</li>
+</ul>
+
+<h2>3. What you can do, right now</h2>
+<p>This is the fastest thing available, and it does not depend on anyone reviewing
+anything. From any message:</p>
+<ul>
+  <li><strong>Mute</strong> the conversation for 1 hour, 1 day or 1 week. Muting
+      silences the notification, not the conversation: the other person's messages
+      still arrive in the thread and stay there. That is deliberate — no longer
+      being interrupted should not cost you the evidence of what you were sent.</li>
+  <li><strong>Block</strong> the person. A block cuts both directions and
+      <strong>the conversation disappears from both lists</strong>: no open window
+      is left to keep writing from. The thread is not deleted; the evidence
+      stays.</li>
+  <li><strong>Report</strong>, picking a reason —harassment, spam, hate, cheating
+      or other— and adding whatever you want to tell us. You can report a message,
+      a profile, a name or conduct in a duel, and you can block in the same
+      step.</li>
+  <li><strong>Shut the door on strangers</strong>: in Account and privacy you can
+      set "who can message me?" to <em>friends only</em> or <em>nobody</em>.</li>
+</ul>
+<p>When you report, <strong>we also mute that conversation for 24 hours
+automatically</strong>. Reporting while still receiving messages from the same
+person would be pointless: the review takes time, the harassment does not.</p>
+
+<h2>4. What the system does on its own — and what it does not</h2>
+<p>There is an automatic profanity filter, and it covers <strong>all ten
+languages of the game</strong>. It acts <strong>on send</strong>: it masks the word
+with asterisks before storing it, and the original text is never stored anywhere.
+In a player <strong>name</strong> it masks nothing — it rejects the name, because a
+name is permanent and being called <em>****</em> forever is worse. It does not
+depend on the language you picked in Options: the whole filter is run over
+<strong>every</strong> message, whatever language it is written in. There is also a
+rate limit —three messages every two seconds— so that spam is not free.</p>
+<div class="nota">
+<p style="margin-bottom:.5rem"><strong>And it does not perform equally in all
+ten, so we are not going to claim it does.</strong> A word filter depends on how
+a language separates words, and not all of them separate them the same way. There
+are three distinct tiers —seven languages, one, and two— and this is what they
+are:</p>
+<ul style="margin-bottom:.5rem">
+  <li><strong>Spanish, English, Portuguese, French, German, Polish and
+      Turkish</strong> —the ones written in our alphabet— are where it works
+      <strong>best</strong>: the filter recognises where each word starts and ends,
+      and it handles accents, capitals, repeated letters, invisible characters
+      slipped into the middle, letters swapped for digits or symbols, and the
+      commonest endings of a single root.</li>
+  <li>In <strong>Russian</strong> it does all of that <em>except</em> the endings.
+      Russian inflects far more than Spanish, and inflected forms of an insult that
+      are not spelled out one by one in the list <strong>get through</strong>. The
+      coverage is real, but it is narrower.</li>
+  <li><strong>Japanese and Chinese</strong> are where it catches <strong>the
+      least</strong>, and not through neglect: those languages do not separate
+      words with spaces, so the filter can only look for the exact sequence of
+      characters anywhere inside the sentence. That means a great many everyday
+      profanities —including the commonest ones in both languages— are
+      <strong>deliberately left out of the list</strong>, because as a loose
+      sequence they turn up inside perfectly ordinary words: masking them would
+      censor people who said nothing. Between over-censoring an innocent person and
+      letting a profanity through, we choose the latter, and in Japanese and
+      Chinese that choice is paid for more often.</li>
+</ul>
+<p style="margin-bottom:0">None of this is fixed by a longer list: it is how the
+writing systems work. We write it here because claiming "we filter equally in
+ten languages" would be false, and what actually holds moderation up is what
+follows, not the filter.</p>
+</div>
+<div class="nota">
+<p style="margin-bottom:.5rem"><strong>And we say plainly what that filter does
+NOT do</strong>, because a word filter posing as moderation is worse than no
+filter: it makes everyone stop looking.</p>
+<ul style="margin-bottom:0">
+  <li><strong>It does not understand context.</strong> "I'm going to kill you"
+      passes untouched, and no word list stops it. The reverse too: "shit, I lost"
+      gets masked without being an attack.</li>
+  <li><strong>It does not stop harassment.</strong> Threats, targeted abuse,
+      grooming and hatred by euphemism do not use listed words — precisely because
+      the harasser avoids them.</li>
+  <li><strong>It is not exhaustive and never will be.</strong> Slang in ten
+      languages changes faster than a hand-written list. There will always be gaps
+      — and more of them in some languages than others: see the box above.</li>
+  <li><strong>It lets ambiguous words through on purpose.</strong> Faced with a word
+      that is an insult in one country and ordinary in another, we choose not to
+      mask it: a filter that blanks out the message —or the surname— of someone who
+      did nothing teaches people to ignore it.</li>
+  <li><strong>It decides no punishments.</strong> Nothing the filter does bans,
+      mutes or counts strikes.</li>
+</ul>
+</div>
+<p>What does stop those things is the full chain: <strong>block + mute + report +
+retained evidence + a human reading it</strong>. The filter is a floor, and it is
+worth having because a human sits above it — not instead of one.</p>
+
+<h2>5. What happens to a report</h2>
+<ol>
+  <li>The report is stored with its reason, your note and the time.</li>
+  <li><strong>Evidence is retained</strong>: the reported message and the five
+      before it are held back from the automatic 30-day deletion until the report
+      is reviewed. Without that, a harasser could simply wait thirty days and
+      reach review with no text.</li>
+  <li>That conversation is muted for you for 24 hours.</li>
+  <li><strong>A human reads it</strong> and decides. Target response time:
+      <strong>4 days</strong>. It is a target, not a guarantee; see section 9. The
+      tool used to read reports flags as overdue any case past that target.</li>
+</ol>
+<p>If you report the same person twice within 24 hours, the second one does not open
+another case —but <strong>the new evidence is retained all the same</strong>,
+attached to the report that already exists. What gets deduplicated is the
+paperwork, never the proof.</p>
+<div class="nota">
+<p style="margin-bottom:0"><strong>No report ever punishes automatically</strong>,
+and that is a decision, not a gap. A report that punishes on its own is a weapon:
+five coordinated accounts could silence anyone. Nothing lands on the reported person
+until someone reads what happened.</p>
+</div>
+
+<h2>6. Sanctions</h2>
+<p>Depending on severity and history, the reviewer can do <strong>two
+things</strong>. Two, and not a longer list, because it is what the system can
+actually apply:</p>
+<ul>
+  <li><strong>Close chat on the account</strong>, for a set period or permanently.
+      The account keeps playing, buying and trading as normal: it closes chat and
+      nothing else. <strong>If it has an end date it lifts itself</strong> —you do
+      not have to ask— but <strong>not at the exact minute</strong>: a job that
+      runs overnight is what lifts it, so chat can stay closed for a few hours
+      past the expiry time. If you need it sooner, write (section 7) and it is
+      lifted by hand. And the game tells you, in the <strong>three</strong> places
+      where you would have wondered —the <em>Chat</em> tab, the duel's message
+      wheel and <em>Account and privacy</em>—: that it is closed <strong>by
+      moderation</strong> —not by your age, not by a bug—, until what day and
+      time, or <strong>that it has no end date</strong> if it is permanent, and
+      what to do if you think it was a mistake.</li>
+  <li><strong>Suspend the account</strong>, temporarily or permanently. While it
+      lasts, the server does not let it play online.</li>
+</ul>
+<p>Both are applied <strong>by hand, on the server</strong>. There is a
+command-line tool —the queue— that lists unreviewed reports, opens the case with
+its evidence, records the written decision and applies or lifts the chat closure;
+a person runs it, logged into the server. The suspension is written straight onto
+the database, with no tool at all. <strong>There is no web console, no address in
+the application that sanctions anyone, and no automation that fires
+anything</strong>: no report, on its own, moves a hair on anybody. It also means
+everything depends on a person getting to the case. See section 9.</p>
+<p>Sexual content directed at a minor, credible threats of violence and child sexual
+abuse material result in a permanent closure on the first occurrence and are reported
+to the competent authorities.</p>
+<p><strong>Deleting an account does not delete a suspension.</strong> While it
+lasts we keep its Steam identifier —and with it the declared age and the closed
+chat— so that coming back is not as simple as signing up again. A closed chat that
+does <em>not</em> come with a suspension does not survive: that account is
+anonymised in full and its row stops belonging to anyone. It is explained in the
+<a href="privacidad.html">privacy policy</a>, section 6.</p>
+<p>It does not delete reports either: <strong>the ones filed about you outlive
+your account</strong>, with their reason, note and time, and no job removes them.
+The complaint belongs to whoever wrote it.</p>
+
+<h2>7. If you were sanctioned and believe it was wrong</h2>
+<p>Write to
+<strong><a href="mailto:francisarroyo20@gmail.com">francisarroyo20@gmail.com</a></strong>
+with your full duelist name (name and number). We review the decision and answer
+you. If we got it wrong, we undo it.</p>
+
+<h2>8. Minors</h2>
+<p><strong>Accounts belonging to players under 18 have chat closed</strong> —they
+can neither send nor receive messages— and no switch opens it. An adult cannot
+message a minor either: the refusal looks at both sides. For accounts declaring
+under 13, the server additionally refuses two concrete things: <strong>starting a
+real-money purchase and opening a trade</strong> in the Agora. Those are the only
+two places where that gate is applied, and they hold each other up, because the
+Agora requires a previous real purchase. The detail is in the
+<a href="privacidad.html">privacy policy</a>, section 7.</p>
+<p>If you are a parent or guardian and want to report something involving a minor,
+write to
+<strong><a href="mailto:francisarroyo20@gmail.com">francisarroyo20@gmail.com</a></strong>:
+those cases are looked at first.</p>
+
+<h2>9. Who moderates, stated plainly</h2>
+<p>We would rather you read this here than discover it while waiting.</p>
+<div class="nota">
+<p><strong>Darcnia is made by one person, and that person is the one who reads the
+reports.</strong> There is no moderation team, no 24-hour shifts and no real-time
+review. Reports are read by hand, with the queue from section 6, logged into the
+server, in batches: the <strong>oldest come first</strong> and the tool itself
+flags as overdue any case past the four days. <strong>And nothing notifies you
+that it was reviewed</strong>: if you want to know how your report ended, write.</p>
+<p style="margin-bottom:0">That is why the tools that do <em>not</em> depend on us
+are the important ones, and they are immediate: <strong>mute, block and shutting the
+door on strangers</strong> take effect the moment you use them. If something is
+urgent —a threat, anything involving a minor— the fastest route is not the form: it
+is writing to
+<strong><a href="mailto:francisarroyo20@gmail.com">francisarroyo20@gmail.com</a></strong>.</p>
+</div>
+<p>We say it because the alternative would be to write "24/7 moderation" and have
+it be false.</p>
+
+<div class="pie">
+<p><a href="/">Back to the site</a> · <a href="privacidad.html">Privacy policy</a></p>
+<p>© 2026 Darcnia. All rights reserved.</p>
+</div>
+
+</section>
+
+</div>
+
+<script>
+/* Sin dependencias: main.js exige #langEn/#langEs del index y reventaría acá.
+   Se comparte la MISMA clave de localStorage que el sitio. */
+(function () {
+  var guardado = localStorage.getItem("darcnia_lang");
+  var lang = (guardado === "es" || guardado === "en") ? guardado
+    : ((navigator.language || "en").toLowerCase().indexOf("es") === 0 ? "es" : "en");
+  var bEs = document.getElementById("bEs");
+  var bEn = document.getElementById("bEn");
+  function aplicar(l) {
+    lang = l;
+    localStorage.setItem("darcnia_lang", l);
+    document.documentElement.lang = l;
+    document.querySelectorAll("[data-lang]").forEach(function (s) {
+      s.classList.toggle("on", s.getAttribute("data-lang") === l);
+    });
+    bEs.classList.toggle("active", l === "es");
+    bEn.classList.toggle("active", l === "en");
+    bEs.setAttribute("aria-pressed", String(l === "es"));
+    bEn.setAttribute("aria-pressed", String(l === "en"));
+  }
+  bEs.addEventListener("click", function () { aplicar("es"); });
+  bEn.addEventListener("click", function () { aplicar("en"); });
+  aplicar(lang);
+})();
+</script>
+
+<!--
+═══════════════════════════════════════════════════════════════════════════
+ QUÉ HAY QUE REVISAR EN ESTA PÁGINA CUANDO CAMBIE EL CÓDIGO
+═══════════════════════════════════════════════════════════════════════════
+
+Documento legal publicado. Cada afirmación de abajo la sostiene una línea del
+repo HOY, y ningún test la vigila: si el código cambia y esta página no, la
+página miente. Se corrige acá, en las DOS versiones (ES y EN), y se sube la
+fecha de «Última actualización» de las dos.
+
+AFIRMACIÓN                           → DE DÓNDE SALE
+· 300 caracteres · 12 frases de sala  → backend/app/chat.py `CHAT_MAX_CHARS`,
+                                        `FRASES` (si se agrega la frase 13, la
+                                        tabla de §1 dice un número viejo)
+· en la mesa NO hay texto libre       → chat.py `enviar` (rama `tipo == "sala"`)
+· 3 mensajes cada 2 s                 → chat.py `ANTISPAM`
+· silencio de 1 h / 1 día / 1 semana  → chat.py `SILENCIO_HORAS`
+· silencio automático de 24 h al      → chat.py `SILENCIO_REPORTE_HORAS`
+  reportar
+· mensaje + 5 anteriores retenidos    → chat.py `EVIDENCIA_CONTEXTO`,
+                                        `retener_evidencia`
+· silenciar no impide que el otro     → chat.py `silenciar` (docstring)
+  escriba
+· bloquear saca el hilo de las dos    → chat.py `listar_conversaciones`
+  listas, sin borrarlo
+· el chat nace cerrado para todos     → chat.py `_privacidad_chat`
+                                        (sin fila de privacidad ⇒ cerrado)
+· menor: cerrado en las 2 direcciones → chat.py `verificar_envio`
+                                        (`mi_menor or su_menor`)
+· chat a los 18 · menos de 13 sin     → backend/app/cuenta.py `MAYORIA_EDAD`,
+  compras ni Ágora                      `EDAD_MINIMA_CHAT`, `exigir_elegible`
+· nombre 3-16 · frase 60              → cuenta.py `NOMBRE_MIN`/`NOMBRE_MAX`,
+                                        amigos.py `FRASE_MAX`
+· filtro de LOS DIEZ IDIOMAS,         → backend/app/malas_palabras.py: `_ES`,
+  censura al escribir, rechaza el       `_EN`, `_PT`, `_FR`, `_DE`, `_PL`, `_TR`
+  nombre, no guarda el original         (→ `PALABRAS`), `_RU` (→
+                                        `PALABRAS_CIRILICO`), `_ZH` y `_JA` (→
+                                        `PALABRAS_CJK`); `censurar`,
+                                        `tiene_groseria`. **Diez listas para diez
+                                        idiomas**, que en Steam son trece entradas
+                                        porque es, pt y zh van dos veces por
+                                        variante.
+  ⚠️ **EL NÚMERO ES DIEZ, Y EL ENCABEZADO DE `malas_palabras.py` DICE ONCE.** Ese
+  docstring escribe «las trece entradas de idioma de Steam son once idiomas» y
+  dos renglones más abajo enumera DIEZ y dice «y por eso son DIEZ listas». Contado
+  sobre `core/tr.gd` → `LOCALES`: 13 entradas − 3 variantes dobles = **10**. §4 de
+  esta página dice diez **y los enumera**, para que se verifique contando. El
+  «once» es un error de redacción de ese docstring —no falta ningún idioma ni
+  ninguna lista— y está anotado como R22 en `docs/perfil/CIERRE_LEGAL_F6.md`
+  porque esta tanda no toca `backend/`.
+  ⚠️ **DECÍA «ES/EN/PT» HASTA EL 2026-08-15 Y ERA FALSO PARA OCHO IDIOMAS.** La
+  casilla «Filtered in-game text chat only» del Content Survey promete un filtro
+  «for the languages supported by the game», así que esta frase no es decorativa:
+  viaja a IARC, a la ClassInd y a la USK. El día que se sume el idioma catorce hay
+  que sumar su lista en `malas_palabras.py` Y corregir §4 acá, en ES y EN.
+· LA COBERTURA ES DESIGUAL Y §4 LO   → las tres pasadas de `malas_palabras.py` y
+  DICE EN TRES NIVELES                  sus reglas de borde:
+    · latino (7 idiomas): `_BORDE_LATINO` + `_LEET_DIGITOS`/`_LEET_SIMBOLOS` +
+      `_SUFIJOS` + `INVISIBLES` + `_patron` (repeticiones y separadores).
+    · cirílico (ru): mismo borde contra el alfabeto cirílico y leet cirílico,
+      **pero `_SUFIJOS_CIRILICO = ()`** — está VACÍA a propósito y por eso §4 dice
+      que las formas declinadas pasan. El día que se llene, §4 mejora.
+    · CJK (ja, zh): SUBCADENA, sin bordes y sin sufijos, porque en esas escrituras
+      el borde de palabra no existe. Por eso el criterio de entrada de esas dos
+      listas es MÁS duro y las groserías más comunes de los dos idiomas están
+      fuera a propósito (los comentarios de `_ZH` y `_JA` enumeran cuáles y contra
+      qué palabra inocente chocaba cada una). §4 lo publica con esas palabras.
+  ⚠️ La lista de «lo que el filtro NO hace» de §4 es la del docstring de ese
+  archivo. Si algún día se agrega detección de contexto, de acoso o de idioma
+  nuevo, ese bloque de §4 pasa a ser injustamente pesimista y hay que reescribirlo.
+· el juego está en 10 idiomas         → core/tr.gd `LOCALES` (15 locales, 13 con
+  (13 entradas de Steam, 15 locales)     nombre de Steam no vacío) y `data/i18n/`.
+                                         La misma lista que la nota del principio
+                                         de privacidad.html: se corrigen juntas.
+· motivos y contextos de un reporte   → backend/app/main.py `MOTIVOS_REPORTE`,
+                                        `CONTEXTOS_REPORTE`
+· dedupe de 24 h que NO apaga la      → main.py `_cuerpo_reportar` (rama `ya`)
+  retención
+· ningún reporte sanciona solo        → main.py `reportar` (docstring)
+· la suspensión la respeta el         → models.py `Player.puede_jugar`,
+  servidor                              `baneado_hasta`
+  ⚠️ NADIE ESCRIBE `baneado_hasta` en `app/`: la suspensión se APLICA con un
+  UPDATE a mano sobre la base, y sólo la LECTURA está en el código. Por eso §6
+  dice «la suspensión se escribe directamente sobre la base, sin herramienta»: la
+  bandeja no la sabe aplicar. Si algún día `app.moderacion` gana un subcomando
+  `suspender`, esa media frase de §6 cambia.
+· cerrar el chat es una sanción       → cuenta.py §7: `silenciar_chat`,
+  APARTE de la suspensión: deja         `levantar_silencio`, `chat_silenciado_hasta`
+  jugar                                 + `motivo_silencio`, y `_chat_efectivo`
+                                        (adulto Y sin sanción viva). Se aplica a
+                                        mano con `app.moderacion sancionar` /
+                                        `levantar`, que DELEGAN acá: NO hay
+                                        endpoint, y §6 dice justamente eso.
+  ⚠️ §6 DECÍA «la sanción TIENE fecha de fin y se levanta sola», y la permanente
+  existe: `cuenta.SILENCIO_PERMANENTE` es el 31/12/9999 (una fecha y no un `None`,
+  a propósito). Por eso hoy §6 dice «si tiene plazo» y nombra el caso permanente.
+· la bandeja de moderación EXISTE     → backend/app/moderacion.py: `listar` (sin
+  y es una CLI, no un panel ni un       revisar, más viejos primero, VENCIDO
+  endpoint                              pasados `OBJETIVO_DIAS`), `ver`,
+                                        `resolver`, `sancionar`, `levantar`.
+  ⚠️ Hay un test que vigila que NO nazca un endpoint (main.py no importa el
+  módulo, ninguna ruta lo menciona) y que `moderacion.py` sea el ÚNICO archivo de
+  `app/` que escribe `revisado = True`. Si eso cambia, §6 y §9 mienten.
+· «objetivo de respuesta: 4 días»     → moderacion.py `OBJETIVO_DIAS = 4`. EL
+                                        NÚMERO ESTÁ EN DOS SITIOS: si cambia uno,
+                                        cambia el otro (ES, EN y la constante).
+· el juego avisa la sanción en TRES   → tab_chat.gd `texto_sancion()` /
+  sitios, con la fecha o «sin fecha     `sancion_sin_fin()` (la de 9999 no se
+  de fin»                               pinta), y la usan `tab_chat._pintar_puerta`,
+                                        `tab_cuenta._seccion_edad` y
+                                        `sala_view._refrescar_estado`.
+· la sanción con plazo se levanta     → `cuenta.reconciliar_edad` (recalcula el
+  SOLA, PERO NO EN EL MINUTO: la        interruptor con `_chat_efectivo`), agendada
+  levanta el cron de las 4:05           por `mantenimiento.TAREAS` y —lo que de
+                                        verdad la hace correr— nombrada con
+                                        `--solo reconciliar_edad` en la línea de
+                                        las 4:05 de
+                                        `deploy/vm/instalar_mantenimiento.sh`.
+  ⚠️ §6 DECÍA «se levanta sola el día que llega, sin que nadie tenga que
+  acordarse» Y ERA FALSO PARA CASI TODA SANCIÓN TEMPORAL: entre la hora de
+  vencimiento y las 4:05 de la mañana siguiente el chat sigue cerrado, porque
+  quien prohíbe el envío es `chat.verificar_envio` leyendo
+  `player_privacy.chat_habilitado`, y esa columna la reescribe el cron. Peor: en
+  esa ventana `cuenta.estado_chat` ya no dice `sancionado` y cae en
+  `sin_declarar`, así que el juego le pide la puerta de edad a alguien que ya la
+  pasó. Hoy §6 dice «se levanta sola, pero no en el minuto exacto» y ofrece el
+  camino de `levantar_silencio` (escribe YA) para quien no pueda esperar. NO se
+  arregla agregando una tarea nueva: eso es tocar el cron y volver a desplegar.
+  ⚠️ LA MISMA PROMESA VIVE EN EL JUEGO, y esta tanda NO la tocó:
+  `perfil.chat.sancion_ayuda` (ui_es.gd / ui_en.gd) dice «cuando termina se
+  levanta sola: no tienes que pedirlo». Es menos exacta que §6 por la misma
+  ventana de horas. Cambiarla es tocar i18n y regenerar; queda anotado acá para
+  que las dos digan lo mismo el día que se toque.
+· el juego dice POR QUÉ está cerrado  → cuenta.py `estado_chat` (`chat_estado`:
+  el chat, y hasta cuándo               abierto | sin_declarar | menor | sancionado)
+                                        en `GET /me/privacidad` y en `POST /me/edad`
+· el suspendido conserva su SteamID   → mantenimiento.py `ejecutar_borrados`
+  al borrarse — y con él la edad         (`retiene_steam`; el `if not retiene_steam`
+  declarada y la sanción de chat        anula `nacimiento`, `edad_declarada_ts`,
+                                        `chat_silenciado_hasta`, `motivo_silencio`)
+  ⚠️ Y POR ESO §6 DICE «SUSPENSIÓN» Y NO «SANCIÓN» A SECAS: un chat cerrado SIN
+  suspensión encima se destruye con el borrado, porque `retiene_steam` sólo mira
+  `baneado_hasta`. Es lo que hace el código hoy; si algún día `retiene_steam`
+  pasa a mirar también el silencio, §6 vuelve a poder decir «una sanción».
+· los reportes sobreviven al borrado  → `ejecutar_borrados` no toca `reports`, y
+  y no tienen plazo                     `reports` no está en `mantenimiento.TAREAS`
+
+✅ LO QUE ERA UN «CUANDO SE CONSTRUYA» Y YA ESTÁ CONSTRUIDO (2026-08-14). Este
+bloque decía que no había ruta que listara reportes, que nada marcaba un reporte
+como revisado y que por eso la evidencia retenida NO SE PURGABA NUNCA. Eso lo
+cerró `backend/app/moderacion.py`, y las dos consecuencias que quedan escritas
+para el que siga:
+  1. La evidencia retenida ya tiene salida: `resolver` marca `revisado` y
+     `chat.filtro_purgable` la suelta en la purga siguiente. `resolver` NO toca
+     `retenido`; quién se puede borrar lo define `filtro_purgable` y nadie más.
+     Está declarado en privacidad.html §8 y las dos páginas se corrigen juntas.
+     ⚠️ 2026-08-15: privacidad.html ganó una §4 nueva (la base legal del art. 6 del
+     RGPD) y todo lo que estaba de §4 en adelante se corrió UN número. Los dos
+     enlaces del cuerpo de esta página ya apuntan a §6 (qué sobrevive al borrado) y
+     §7 (menores), que antes eran §5 y §6.
+     ⚠️ 2026-08-15, SEGUNDA TANDA: en esa §4, la fecha de nacimiento pasó de
+     «obligación legal (6.1.c) + art. 8» a INTERÉS LEGÍTIMO (6.1.f) — el art. 8 no
+     es una base de licitud y lo que exige la puerta de edad es un contrato con la
+     tienda, no una ley. ESTA página no cita ninguna base legal (habla de la
+     sanción, no del dato), así que no hubo que tocar el cuerpo; queda anotado
+     para que la próxima vez que alguien escriba acá «porque la ley nos obliga»
+     sepa que en la página de al lado se decidió lo contrario, y por qué. Y vale
+     la misma advertencia que encabeza el pie de privacidad.html: esa elección de
+     bases la hizo un modelo leyendo el código y **no es asesoramiento jurídico**.
+  2. El objetivo de §5 (4 días) no se puede prometer más corto que la frecuencia
+     real con que alguien corre `listar`. Y NUNCA «moderación 24/7» mientras el
+     estudio sea una persona.
+
+✂️ LO QUE SE PODÓ EL 2026-08-14, Y POR QUÉ. La regla de esa tanda: una
+afirmación que no se puede sostener señalando UNA línea de código se borra o se
+achica. No se reescribe el código para salvar la frase.
+  1. §6 listaba CINCO poderes del moderador y hoy lista DOS. Se fueron:
+     · «Ocultar el mensaje» — `chat_messages.oculto` existe en `models.py`, lo
+       LEEN `chat.py`, `moderacion.py` y `cuenta._CHAT_MODERACION`… y NADIE en
+       todo `app/` lo escribe en `True`. Es una columna sin escritor: la política
+       ofrecía un botón que no hay.
+     · «Cambiar un nombre o una frase de estado» — no hay función ni subcomando.
+       El único cambio de nombre que existe es el del JUGADOR, y cuesta Teselas
+       (`cuenta.CAMBIO_NOMBRE_TESELAS`).
+     Si algún día `app.moderacion` gana `ocultar` o `renombrar`, vuelven — con el
+     nombre del subcomando al lado, como el resto de esta lista.
+  2. §5 tenía un paso «junto al reporte queda anotado cuántas personas distintas
+     denunciaron a esa cuenta». ESE NÚMERO SÍ SE GUARDA —`main._cuerpo_reportar`
+     escribe `reportantes_distintos=N` dentro de `reports.nota`—, así que la
+     frase NO era falsa. Se podó igual, por dos motivos: es una nota interna que
+     no le cambia nada a quien lee la política, y vive en un campo de texto
+     libre (no hay columna), congelada en el instante del reporte. Una promesa
+     que sólo sostiene un formato de string es la que se rompe sin que nadie
+     mire. Podar lo que no hace falta prometer es la forma barata de no mentir.
+
+LO QUE SIGUE SIN EXISTIR, Y §9 LO DICE: nada avisa de que entró un reporte
+(no hay correo, ni Discord, ni alarma) y nada le avisa al denunciante de que su
+caso se resolvió. Si algún día se agrega un aviso, §9 mejora; hasta entonces la
+frase «nada te avisa a ti de que se revisó» es lo que hace el programa.
+
+MARCADORES — ESTADO AL 2026-08-14:
+  ✅ [CORREO DE MODERACIÓN] / [MODERATION EMAIL] → francisarroyo20@gmail.com
+     (3 en ES + 3 en EN). Es la MISMA dirección que la de privacidad.html a
+     propósito: el estudio es una persona y fingir dos buzones sería fingir dos
+     personas.
+  ✅ [PLAZO objetivo] / [SLA target] → 4 días, el mismo número que
+     `moderacion.OBJETIVO_DIAS`.
+  No queda ningún marcador sin llenar en esta página. Y desde el 2026-08-14
+  tampoco en privacidad.html: la razón social y el domicilio los dio Fran
+  (Francisco Arroyo · Berazategui, Provincia de Buenos Aires, Argentina).
+  **No queda NINGÚN marcador sin llenar en ninguna de las dos páginas.**
+-->
+</body>
+</html>
