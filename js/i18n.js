@@ -91,7 +91,9 @@ window.I18N = {
     /* F6-12: the two policies must be reachable from the public site — the
        store page and the IARC declaration both point here. */
     "footer.privacy": "Privacy policy",
+    "footer.odds": "Pack drop rates",
     "footer.moderation": "Moderation policy",
+    "footer.walker": "Darcnia Walker privacy policy",
     "footer.rights": "© 2026 Darcnia. All rights reserved."
   },
 
@@ -185,7 +187,9 @@ window.I18N = {
     /* F6-12: las dos políticas tienen que poder alcanzarse desde el sitio
        público — la ficha de Steam y la declaración de IARC apuntan acá. */
     "footer.privacy": "Política de privacidad",
+    "footer.odds": "Probabilidades de los sobres",
     "footer.moderation": "Política de moderación",
+    "footer.walker": "Política de privacidad de Darcnia Walker",
     "footer.rights": "© 2026 Darcnia. Todos los derechos reservados."
   }
 };

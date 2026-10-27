@@ -118,12 +118,12 @@ window.CARDS_DATA = {
     "en": {
       "flavor": "",
       "name": "Blood Pact",
-      "text": "Pay 1000 LP: draw 2 cards."
+      "text": "Pay 2000 LP: draw 2 cards."
     },
     "es": {
       "flavor": "",
       "name": "Pacto de Sangre",
-      "text": "Paga 1000 LP: roba 2 cartas."
+      "text": "Paga 2000 LP: roba 2 cartas."
     },
     "level": 1,
     "monster": false
